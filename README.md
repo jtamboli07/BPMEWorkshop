@@ -8,4 +8,4 @@ This workshop, **delivered by an experienced TIBCO Solution Engineer** either vi
 
 # Lets get started with prerequisites
 Let's begin the workshop by setting up the environement and understanding the use case.
-### Next step: [Setting up Environment and understanding the usecase for this workshop](gettingStarted.md)
+### Next step: [Setting up Environment and understanding the usecase for this workshop](getting_Started.md)
