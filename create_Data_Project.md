@@ -10,7 +10,7 @@ Open the Business Studio and select a workspace then
 
 2) Name the Project "MyDisputeCase" and Click "Finish"
 
-<img src="/images/businessData/2.jpg" alt="Create Business Data Project" width=700/>
+<img src="/images/businessData/2.jpg" alt="Create Business Data Project" width=400/>
 
 3) From right pane Palette > Under Case Data > Case > Click & drag Case Data object
 
@@ -27,7 +27,7 @@ and Click and rename the Case1 as Dispute.
 <img src="/images/businessData/5.jpg" alt="Create Business Data Project" width=700/>
 
 6) Click the "Dispute" Case Data and select "Add Attribute" option and name it as "customer name"
-<img src="/images/businessData/6.jpg" alt="Create Business Data Project" width=700/>
+<img src="/images/businessData/6.jpg" alt="Create Business Data Project" width=400/>
 
 7) Similarily add 3 more attributes of name and type
    ***dob (Date), disputetype(text), cardtype(text)***
@@ -36,7 +36,7 @@ and Click and rename the Case1 as Dispute.
 
 8) From the palette > Under elements > select and drag Enumeration to canvas in the middle > rename it to disputetype
 
-<img src="/images/businessData/8.jpg" alt="Create Business Data Project" width=700/>
+<img src="/images/businessData/8.jpg" alt="Create Business Data Project" width=400/>
 
 9) Add below enumeration values :  ***overcharge, wronglycharged***. Click on disputetype and change Type by selecting newly created enumeration group as shown below :
 
