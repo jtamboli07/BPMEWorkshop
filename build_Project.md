@@ -41,16 +41,6 @@ Parameters and data fields are similar to parameters and local variables in most
 #### Data Best Practices
 Using case data as the single source of truth for data, it makes sense to only pass unique case identifiers between processes instead of passing entire case objects between processes. This ensures that data is always in synch when working with data. It also means that when working with data, you need to fetch the data using case search functionality. For this reason it is also a good idea to create reusable service processes to do searching as it will speed up development time. We will be implementing this best practice in this workshop.
 
-
-### Organizational Models (_org)
-When creating a BPM project you will require a organizational model for offering and allocating tasks to people in the organization. It is recommended that a new organizational model is used for every project you implement. The reason for this is that it makes it easier to life cycle the artifact with the project it was intended for. This makes trouble shooting easier when problems are occur.
-
-### Interface Project (_interface)
-Process Interfaces allows for late binding of sub-processes and therefore the sub-processes are not statically linked into the main process at design time. 
-The interface provides a template for the sub-process input and output parameters. It is a best practice to create a separate project for interface files. There is no special project for interfaces so a BPM Process project is used for this purpose. 
-
- ![build_project](images/buildproject/2.png)
-
 ### Forms Project (_forms)
 Forms project allow you to create one central place for embed-able forms (forms that are reusable). It makes it very easy to create user interfaces that are consistent throughout your project if you create embed-able forms that is reused in your project. It is a good idea to create a embed-ab;le form for every case or global class in your project and reuse it where needed. This way you can format the form the way you need and then just reuse. Formatting forms some times takes time and having to do this over and over can lead to longer than expected implementation times.
 
