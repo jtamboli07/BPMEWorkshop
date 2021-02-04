@@ -18,16 +18,3 @@ In this section we will highlight some terminology that you may already know but
 
 
 
-### Signal Project (_signal)
-### Case Actions (_actions)
-### Business Services (_businessServices)
-### Services Projects (_services)
-### Services Business Object Model (_servicesBom)
-### Rest Services Project (_rest)
-### Process State Projects (_"stateName")
-### State Lookup components
-#### State case data bom
-#### State service processes
-
-
-
