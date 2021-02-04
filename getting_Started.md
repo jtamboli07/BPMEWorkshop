@@ -33,6 +33,10 @@ The design-time component consists of a Eclipse install with all the required fu
 
 Complete the setup and move to the next section.
 
+# Understanding Case Management Methodology
+Next Step is to understand how the Case Management Methodology is implemented and applied to a BPM solution.
+### Next Step : [Understanding Case Management Methodology](case_Management.md)
+
 # Understanding the use Case
 
 Case Management use case Disputes processing example.
