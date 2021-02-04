@@ -45,3 +45,15 @@ and Click and rename the Case1 as Dispute.
 10) Click on dispute and select "Add Identifier"
 
 <img src="/images/businessData/10.jpg" alt="Create Business Data Project" width=700/>
+
+11)
+<img src="/images/businessData/11.jpg" alt="Create Business Data Project" width=700/>
+
+12)
+<img src="/images/businessData/12.jpg" alt="Create Business Data Project" width=700/>
+
+13)
+<img src="/images/businessData/13.jpg" alt="Create Business Data Project" width=700/>
+
+14)
+<img src="/images/businessData/14.jpg" alt="Create Business Data Project" width=700/>
