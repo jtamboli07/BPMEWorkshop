@@ -101,7 +101,7 @@ The first script task in this section reads the data from the new case reference
 
     data.Service = bpm.caseData.read(data.ServiceRef);
 
-if the new data state is different from the existing state, it means the state has changes. The arrow in the image below shows a conditional line evaluating ctate change data field. 
+if the new data state is different from the existing state, it means the state has changes. The arrow in the image below shows a conditional line evaluating state change data field. 
     
     data.Service.state != data.CurrentState;
 
