@@ -44,16 +44,22 @@ and Click and rename the Case1 as Dispute.
 
 10) Click on dispute and select "Add Identifier"
 
-<img src="/images/businessData/10.jpg" alt="Create Business Data Project" width=700/>
+<img src="/images/businessData/10.jpg" alt="Create Business Data Project" width=400/>
 
-11)
+11) From Palette > Create Enumerations "states" and put 4 values
+a)***registered*** b)***advise*** c)***investigate*** d)***resolved***
 <img src="/images/businessData/11.jpg" alt="Create Business Data Project" width=700/>
 
-12)
+12) link the enumeration object to the earlier created Identifier "states" :
 <img src="/images/businessData/12.jpg" alt="Create Business Data Project" width=700/>
 
-13)
+13) Also mark the attribute "resolved" under Terminal States.
 <img src="/images/businessData/13.jpg" alt="Create Business Data Project" width=700/>
 
-14)
+14) Here is the final project view:  
 <img src="/images/businessData/14.jpg" alt="Create Business Data Project" width=700/>
+
+###Congratulations you have successfully created a Business Data Project 
+
+In the next section, we will create an Organisation project to be
+Next step: [Creating an Organisation Project ](2.apiimplementation.md)
