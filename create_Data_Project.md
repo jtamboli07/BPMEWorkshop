@@ -59,7 +59,7 @@ a)***registered*** b)***advise*** c)***investigate*** d)***resolved***
 14) Here is the final project view:  
 <img src="/images/businessData/14.jpg" alt="Create Business Data Project" width=700/>
 
-###Congratulations you have successfully created a Business Data Project 
+### Congratulations you have successfully created a Business Data Projecßt
 
 In the next section, we will create an Organisation project to be
 Next step: [Creating an Organisation Project ](2.apiimplementation.md)
