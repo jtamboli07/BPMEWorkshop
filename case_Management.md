@@ -13,6 +13,6 @@ Take this process below. In this process every step needs to be executed in the 
 
 ![build_project](images/buildproject/9.png)
 
-In the process below we defined the major states/milestones for a support process for fault resolution. As you can see, every state is defined as a stateless process. Because the state processes are stateless, the flexibility that it brings is that the user can update the state through a user interface and based on the business rules, the process will be processed to the next appropriate state. 
+In the process below we defined the major states/milestones for a support process for fault resolution. As you can see, every state is defined as a stateless process. Because the state processes are stateless, the flexibility that it brings is that the user can update the state through a user interface and based on the business rules, the process will be processed to the next appropriate state. Another benefit is that a stateless process is much easier to upgrade in place. There is no need to migrate data that may be associated with a long running process. Stateless processes fetch data in the central repository at the current state to present to the user. 
 
 ![build_project](images/buildproject/10.png)
