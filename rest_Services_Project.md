@@ -6,6 +6,10 @@ This screenshot below shows a configuration of a rest project.
 
  ![build_project](images/buildproject/11.png)
 
+A rest service operation required request as well as response data. Below is an example of a request payload configuration.
+
+ ![build_project](images/buildproject/13.png)
+
  See below the configuration of the activity that will trigger the rest project configured above. Whats left to do is to complete the mapping ot the data fields in the Input to service and Output from service tabs.
 
   ![build_project](images/buildproject/12.png)
