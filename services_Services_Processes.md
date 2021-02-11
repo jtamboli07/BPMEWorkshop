@@ -47,3 +47,17 @@ Make sure you add the parameters as indicated in the image above. You will notic
         data.NewState = data.CaseList[0].newState;
     }
     Log.write("New State 		: " + data.NewState);
+
+Get state location is used to see the location of the dynamic sub-process associated with a case state. Remember to add the parameters as indicated. 
+
+![build_project](images/buildproject/29.png)
+
+    Log.write("********** Get States Location **********");
+    Log.write("State 			: " + data.State);
+
+    data.CaseRefList.pushAll(bpm.caseData.findByCriteria("stateName = '" + data.State + "'",'com.services_bom.StateLocations',0,10));
+    Log.write("data.CaseRefList.length : " + data.CaseRefList.length);
+    data.Case = bpm.caseData.read(data.CaseRefList[0]);
+    data.StateLocation = data.Case.stateLocation;
+
+    Log.write("StateLocation 	: " + data.StateLocation);
