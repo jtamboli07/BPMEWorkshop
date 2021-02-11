@@ -160,4 +160,6 @@ On the Update Case Data and Delete Case Data Initiate scrips add the following l
 
 ![build_project](images/buildproject/14.png)
 
-This is a good CRUD pattern process i often use for maintaining data in simple lookup tables. You will come to realise that you use lookjup tables a lot on BPM solutions.
+This is a good CRUD pattern process i often use for maintaining data in simple lookup tables. You will come to realise that you use lookup tables a lot on BPM solutions.
+
+Now create a similar process for maintaining the state rules case data table.
