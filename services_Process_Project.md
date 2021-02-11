@@ -120,3 +120,44 @@ In order to complete the action, you need to add an OK button rule for the modal
 When done your form outline should look more or less like this.
 
 ![build_project](images/buildproject/22.png). 
+
+Now lets update add the Global case data actions.
+
+![build_project](images/buildproject/14.png)
+
+Now add the 3 case data operation service tasks like in the screenshot above.
+
+#### Create Case
+
+ ![build_project](images/buildproject/23.png)
+
+ #### Update Case
+
+ ![build_project](images/buildproject/24.png)
+
+ #### Delete Case
+
+ ![build_project](images/buildproject/25.png)
+
+ Also add conditional sequence flows to these steps. 
+
+    data.Action == "add";
+    
+    and 
+
+    data.Action == "update";
+
+    and 
+
+    data.Action == "delete";
+
+Lastly, we need to add a couple of script tasks for the service tasks we just created. Also make sure all the sequence flows are drawn like the image below.
+
+On the Update Case Data and Delete Case Data Initiate scrips add the following line
+
+    //Searches the case based on the id that was selected on the form.
+    data.CaseRef = bpm.caseData.findByCaseIdentifier(data.Case.id,'com.services_bom.StateLocations');
+
+![build_project](images/buildproject/14.png)
+
+This is a good CRUD pattern process i often use for maintaining data in simple lookup tables. You will come to realise that you use lookjup tables a lot on BPM solutions.
