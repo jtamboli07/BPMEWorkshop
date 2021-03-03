@@ -53,17 +53,18 @@ a)***registered*** b)***advise*** c)***investigate*** d)***resolved***
 12) link the enumeration object to the earlier created Identifier "states" :
 <img src="/images/businessData/12.jpg" alt="Create Business Data Project" width=700/>
 
-13) Also mark the attribute "resolved" under Terminal States.
+13) Create an attribute "resolution" and link to enumeration as shown :
+<img src="/images/businessData/15.jpg" alt="Create Business Data Project" width=700/>
+
+14) Mark the attribute "resolved" under Terminal States.
 <img src="/images/businessData/13.jpg" alt="Create Business Data Project" width=700/>
 
-14) Here is the final project view:  
+15) The project will look like:  
 <img src="/images/businessData/14.jpg" alt="Create Business Data Project" width=700/>
+
 
 ### Congratulations you have successfully created a Business Data Project
 
+In the next section, we will create an Organisation project. Organisation Projects defines the Models based upon which work assignment and allocation will work for your Automation process.
 
-
-```
-In the next section, we will create an Organisation project 
-Next step: [Creating an Organisation Project ]()
-```
+## Next Step: [Building the Organisation Model](create_Organisation_Project.md)
