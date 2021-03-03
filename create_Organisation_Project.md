@@ -4,38 +4,30 @@
 
 <img src="/images/organization/1.jpg" alt="create organization project" width=700/>
 
-2)vv
+2) Name the project and hit finish.
 
 <img src="/images/organization/2.jpg" alt="create organization project" width=700/>
 
-3)vv
+3) In the loaded page, drag "Organization Unit" from the palette and name it "Dispute Team"
 
 <img src="/images/organization/3.jpg" alt="create organization project" width=700/>
 
-4)vv
+4) Add 3 postions
 
-<img src="/images/organization/4.jpg" alt="create organization project" width=700/>
+<img src="/images/organization/4.jpg" alt="create organization project" width=400/>
 
-5)vv
+and name them as ***a)CustomerService b)DisputeAdvisor c)FraudInvestigator***
 
-<img src="/images/organization/5.jpg" alt="create organization project" width=700/>
+<img src="/images/organization/5.jpg" alt="create organization project" width=250/>
 
-6)vv
+6) Also name the page as "MyDisputeOrg" and save the project.
 
-<img src="/images/organization/6.jpg" alt="create organization project" width=700/>
+<img src="/images/organization/6.jpg" alt="create organization project" width=400/>
 
-7)vv
+###Congratulations Your Org Model is completed
 
-<img src="/images/organization/7.jpg" alt="create organization project" width=700/>
+Now lets create the flows for each actions we can take under Dispute Case Data.
 
-8)vv
+## Next Step: [Building the Actions project](create_Actions_Project.md)
 
-<img src="/images/organization/8.jpg" alt="create organization project" width=700/>
-
-9)vv
-
-<img src="/images/organization/9.jpg" alt="create organization project" width=700/>
-
-10)vv
-
-<img src="/images/organization/10.jpg" alt="create organization project" width=700/>
+1
