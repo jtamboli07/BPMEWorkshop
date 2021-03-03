@@ -24,10 +24,8 @@ and name them as ***a)CustomerService b)DisputeAdvisor c)FraudInvestigator***
 
 <img src="/images/organization/6.jpg" alt="create organization project" width=400/>
 
-###Congratulations Your Org Model is completed
+### Congratulations Your Org Model is completed
 
 Now lets create the flows for each actions we can take under Dispute Case Data.
 
 ## Next Step: [Building the Actions project](create_Actions_Project.md)
-
-1
