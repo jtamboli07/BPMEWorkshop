@@ -30,15 +30,17 @@ Custom help functionality can ge provided by employing TIBCO Nimbus. Process doc
 
 ![build_project](images/buildproject/31.png)
 
-BPM Solutions should not replace current systems of record. Data should always stay in a central location and BPM should only use the data to present to users where required. If changes are made, it should be done directly from the business process at the time of the change. BPM should always only store reference data to allow for finding the data required to complete activities. Business works is the ideal product to accomplish this. As part of the CMF methodology, this capability will be explained.
+BPM Solutions should not replace current systems of record. Data should always stay in a central location and BPM should only use the data to present to users where required. If changes are made, they should be done directly from the business process at the time of the change. BPM should always only store reference data to allow for finding the data required to complete activities. Business works are the ideal product to accomplish this. As part of the CMF methodology, this capability will be explained.
 
 ![build_project](images/buildproject/30.png)
 
-In the case management framework, Events are used to trigger the correct dynamic sub-processes based on the current state of the case. A case data signal event is used to listen to any data changes in a specific case. When the process detects changes, the solution implements a mechanism to find the current state, then search for new state based on an action that triggered the change. This implementation consists of 2 case data tables. the first is the location of processes that are associated with specific states and the second is the order of state execution. We will discuss this in more detail later.  
+In the case management framework, Events are used to trigger the correct dynamic sub-processes based on the current state of the case. A case data signal event is used to listen to any data changes in a specific case. When the process detects changes, the solution implements a mechanism to find the current state, then search for a new state based on an action that triggered the change. This implementation consists of 2 case data tables. the first is the location of processes that are associated with specific states and the second is the order of state execution. We will discuss this in more detail later.  
 
 
 ![build_project](images/buildproject/34.png)
 
-Event triggers can be initiated by Case Actions, Business Services or long running processes. The process snippet below shows the section of the process that is responsible for the chang of a sate and triggering the new case state process.
+Event triggers can be initiated by Case Actions, Business Services, or long-running processes. The process snippet below shows the section of the process that is responsible for the change of a state and triggering the new case state process.
 
 ![build_project](images/buildproject/36.png)
+
+Events can also come from external triggers like BusinessWorks. A good example could be a customer canceling a request for service through an email message. BW can read the email, and correlate the message with an existing case that intern could cause the event to cancel the process/ customer request. 
