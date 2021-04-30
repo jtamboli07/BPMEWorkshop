@@ -34,6 +34,6 @@ BPM Solutions should not replace current systems of record. Data should always s
 
 ![build_project](images/buildproject/30.png)
 
-In the case management framework, Events are used to trigger the correct dynamic sub-processes based on the current state of the case.  
+In the case management framework, Events are used to trigger the correct dynamic sub-processes based on the current state of the case. A case data signal event is used to listen to any data changes in a specific case. When the process detects changes, the solution implements a mechanism to find the current state, then search for new state based on an action that triggered the change. This implementation consists of 2 case data tables. the first is the location of processes that are associated with specific states and the second is the order of state execution. We will discuss this in more detail later.  
 
 ![build_project](images/buildproject/34.png)
