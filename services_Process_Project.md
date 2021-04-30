@@ -66,7 +66,7 @@ Expand your Data section, bottom left corner in outline.
 
 Drag and drop the Case List parameter on your form. You can now change the properties of the pane as you like it. Mine looks like the image above.
 
-Now expand you Palette on the right and select the Modal dialog and put it between the "Update State Location" anf the toolbar. You can click on the tool and release and then point your mouse pointer at the location where you want to drop the control and click. This is not a normal drag and drop action. This sometimes takes a little while to get useed to.
+Now expand you Palette on the right and select the Modal dialog and put it between the "Update State Location" anf the toolbar. You can click on the tool and release and then point your mouse pointer at the location where you want to drop the control and click. This is not a normal drag and drop action. This sometimes takes a little while to get used to.
 
 ![build_project](images/buildproject/19.png). 
 
