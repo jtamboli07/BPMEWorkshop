@@ -14,12 +14,14 @@ Take this process below. In this process, every step needs to be executed in the
 
 ![build_project](images/buildproject/9.png)
 
+## Stateless processes
 In the process below we defined the major states/milestones for a support process for fault resolution. As you can see, every state is defined as a stateless process. Because the state processes are stateless, it brings flexibility in that the user can update the state through a stateless process, and based on the business rules, the process will be processed to the next appropriate state. Another benefit is that a stateless process is much easier to upgrade in place as there is no need to migrate data that may be associated with a long-running process. Stateless processes fetch data in the central repository at the current state to present to the user. Case actions are also called CRUD processes as they allow the user to modify data associated with a case. 
 
 Stateless processes aren't always the appropriate way to progress a process from state to state. Sometimes, long-running processes are required to keep track of SLA. Using the Case Management Framework (CMF) we created a methodology to dynamically manage stateful processes associated with specific states. This methodology is dynamic and allows solutions to be extremely agile. 
 
 ![build_project](images/buildproject/10.png)
 
+## Central Case Date
 At the center of this implementation methodology lies the case data repository. A part of this repository also contains the ability to store and upload documents. The BPME engine is a built-in lightweight document store that allows the system to upload and store documents of many types, like PDFs, word, excel, etc. This repository should not be used for large amounts of documents. Organizations that have this requirement often already have large ECM solutions that could be integrated into the CMF.
 
 Collaboration is a big part of servicing customers in BPM/Case Management solutions. Collaboration can be done by creating a special case type that records all comments, questions, and other collaboration around Case Management Solutions. In AMX BPM 4.3, this functionality was built in, but in BPME 5.0 this functionality needs to be custom build for the time being. 
