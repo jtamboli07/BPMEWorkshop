@@ -33,3 +33,7 @@ Custom help functionality can ge provided by employing TIBCO Nimbus. Process doc
 BPM Solutions should not replace current systems of record. Data should always stay in a central location and BPM should only use the data to present to users where required. If changes are made, it should be done directly from the business process at the time of the change. BPM should always only store reference data to allow for finding the data required to complete activities. Business works is the ideal product to accomplish this. As part of the CMF methodology, this capability will be explained.
 
 ![build_project](images/buildproject/30.png)
+
+In the case management framework, Events are used to trigger the correct dynamic sub-processes based on the current state of the case.  
+
+![build_project](images/buildproject/33.png)
