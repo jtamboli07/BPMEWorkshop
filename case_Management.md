@@ -36,4 +36,9 @@ BPM Solutions should not replace current systems of record. Data should always s
 
 In the case management framework, Events are used to trigger the correct dynamic sub-processes based on the current state of the case. A case data signal event is used to listen to any data changes in a specific case. When the process detects changes, the solution implements a mechanism to find the current state, then search for new state based on an action that triggered the change. This implementation consists of 2 case data tables. the first is the location of processes that are associated with specific states and the second is the order of state execution. We will discuss this in more detail later.  
 
+
 ![build_project](images/buildproject/34.png)
+
+Event triggers can be initiated by Case Actions, Business Services or long running processes. The process snippet below shows the section of the process that is responsible to changonh the sate and triggering the new case state process.
+
+![build_project](images/buildproject/35.png)
