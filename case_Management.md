@@ -41,4 +41,4 @@ In the case management framework, Events are used to trigger the correct dynamic
 
 Event triggers can be initiated by Case Actions, Business Services or long running processes. The process snippet below shows the section of the process that is responsible for the chang of a sate and triggering the new case state process.
 
-![build_project](images/buildproject/35.png)
+![build_project](images/buildproject/36.png)
