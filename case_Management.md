@@ -9,6 +9,7 @@ In this implementation we created is a solution that makes use of both long-runn
 
 Case Management provides a lot of flexibility on top of the normal BPM solution. Using case management, the long-running process steps are replaced with states/milestones that make up an end-to-end process. These states/milestones are not statically linked. A long-running process is modeled to execute steps of a process in sequence or parallel, the state model allows you to process multiple state processes in any order based on the business rules for the process execution. The ability to create stateless CRUD processes (case actions or business services) allows users to update case states without the need to process a work item associated with a process step. 
 
+## Long-Running Processes
 Take this process below. In this process, every step needs to be executed in the order that it is modeled. If the order of the steps needs to be changed, the process definition needs to change and the process needs to be re-deployed. Re-deploying a long-running process requires the migration of existing process instances that takes effort and careful consideration. 
 
 ![build_project](images/buildproject/9.png)
