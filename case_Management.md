@@ -43,4 +43,8 @@ Event triggers can be initiated by Case Actions, Business Services, or long-runn
 
 ![build_project](images/buildproject/36.png)
 
-Events can also come from external triggers like BusinessWorks. A good example could be a customer canceling a request for service through an email message. BW can read the email, and correlate the message with an existing case that intern could cause the event to cancel the process/ customer request. 
+Events can also come from external triggers like BusinessWorks. A good example could be a customer canceling a request for service through an email message. BW can read the email, and correlate the message with an existing case that intern could cause the event to cancel the process / customer request. 
+
+![build_project](images/buildproject/37.png)
+
+
