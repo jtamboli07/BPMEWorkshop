@@ -36,4 +36,4 @@ BPM Solutions should not replace current systems of record. Data should always s
 
 In the case management framework, Events are used to trigger the correct dynamic sub-processes based on the current state of the case.  
 
-![build_project](images/buildproject/33.png)
+![build_project](images/buildproject/34.png)
