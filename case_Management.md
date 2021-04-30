@@ -23,11 +23,13 @@ At the center of this implementation methodology lies the case data repository. 
 
 Collaboration is a big part of servicing customers in BPM/Case Management solutions. Collaboration can be done by creating a special case type that records all comments, questions, and other collaboration around Case Management Solutions. In AMX BPM 4.3, this functionality was built in, but in BPME 5.0 this functionality needs to be custom build for the time being. 
 
+Email is just another way of collaborating, but mostly used for resources like customers that does not have access to the system. BPME 5.0 can send email through a service task in the process, but cannot receive email messages. Responses to email message can be done in different ways. BW can be used to scan a central mailbox and link incoming messages to process instances responsible for sending out mail messages. Signal functionality is used to accomplish this. 
 
+Custom help functionality can ge provided by employing TIBCO Nimbus. Process documentation can be the trigger for business process implementations. Once these processes are mapped, they could be the ideal business view of process implementations and used for process execution help with minimal changes.
 
 
 ![build_project](images/buildproject/31.png)
 
-Processes as well as case actions can interact with others systems of record by implementing BW/CE as part of the processes.
+BPM Solutions should not replace current systems of record. Data should always stay in a central location and BPM should only use the data to present to users where required. If changes are made, it should be done directly from the business process at the time of the change. BPM should always only store reference data to allow for finding the data required to complete activities. Business works is the ideal product to accomplish this. As part of the CMF methodology, this capability will be explained.
 
 ![build_project](images/buildproject/30.png)
