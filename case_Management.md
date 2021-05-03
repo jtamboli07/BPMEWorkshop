@@ -33,6 +33,7 @@ Custom help functionality can ge provided by employing TIBCO Nimbus. Process doc
 
 ![build_project](images/buildproject/31.png)
 
+## Integration Layer
 BPM Solutions should not replace current systems of record. Data should always stay in a central location and BPM should only use the data to present to users where required. If changes are made, they should be done directly from the business process at the time of the change. BPM should always only store reference data to allow for finding the data required to complete activities. Business works are the ideal product to accomplish this. As part of the CMF methodology, this capability will be explained.
 
 ![build_project](images/buildproject/30.png)
