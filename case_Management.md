@@ -38,6 +38,7 @@ BPM Solutions should not replace current systems of record. Data should always s
 
 ![build_project](images/buildproject/30.png)
 
+## Events 
 In the case management framework, Events are used to trigger the correct dynamic sub-processes based on the current state of the case. A case data signal event is used to listen to any data changes in a specific case. When the process detects changes, the solution implements a mechanism to find the current state, then search for a new state based on an action that triggered the change. This implementation consists of 2 case data tables. the first is the location of processes that are associated with specific states and the second is the order of state execution. We will discuss this in more detail later.  
 
 
@@ -47,8 +48,9 @@ Event triggers can be initiated by Case Actions, Business Services, or long-runn
 
 ![build_project](images/buildproject/36.png)
 
-Events can also come from external triggers like BusinessWorks. A good example could be a customer canceling a request for service through an email message. BW can read the email, and correlate the message with an existing case that intern could cause the event to cancel the process / customer request. 
+Events can also come from external triggers like BusinessWorks. A good example could be a customer canceling a request for service through an email message. BW can read the email, and correlate the message with an existing case that intern could cause the event to cancel the process/customer request. 
 
+## Analytics
 ![build_project](images/buildproject/37.png)
 
-
+Analytics is a really important piece of the Case management Framework. To better manage user performance Process KPI's you need to visualize the work in the system. We use TIBCO Spotfire to visualize all aspects of the solution. Spotfire is good at visualizing data from not only the BPM system but data from the entire organization that forms part of any BPM solution including all systems of record. The Spotfire dashboard is exposed inside the CMF UI so that users don't have to load a separate application to see what's going on. TIBCO BPM provides dashboards for users at different levels, like Management, Supervisor, and end-users. 
