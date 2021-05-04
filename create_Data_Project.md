@@ -56,6 +56,7 @@ a)***registered*** b)***advise*** c)***investigate*** d)***resolved***
 13) Create an attribute "resolution" and link to enumeration as shown :
 <img src="/images/businessData/15.jpg" alt="Create Business Data Project" width=700/>
 
+
 14) Mark the attribute "resolved" under Terminal States.
 <img src="/images/businessData/13.png" alt="Create Business Data Project" width=700/>
 
