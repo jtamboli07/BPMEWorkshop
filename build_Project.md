@@ -15,7 +15,7 @@ These are the project artifacts we will be using to build the solution in this w
 In this section we will highlight some terminology that you may already know but it is important in this workshop.
 
 
-Lets tart building the data model
+Lets look at details about building the data model
 ## Next Step: [Building the Business Object Model (_bom)](business_Object_Model.md)
 
 
