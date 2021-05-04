@@ -1,5 +1,12 @@
 # Prerequisites for Workshop
 
+## Windows
+You need to run docker-compose and to run docker-compose on a windows machine, is docker desktop. For this reason, a windows server does not work as Docker desktop does not run on Windows server yet. When this becomes available you should be able to do all of this on Windows server. If you want to do this in the cloud, you will need to use Azure as AWS does not offer Windows 10. We have Azure images to share if you are interested.
+
+## Linux
+All you need is to install docker compose. and on Linux, this is generally not a problem. I found that CentOS performs better when using a cloud AWS instance, just because the GUI on CentOS is more responsive than RedHat or other Linux instances. 
+
+
 ## Docker
 To run the BPM Runtime Developer Server you will need Docker-Compose installed on your environment. This means you will need Docker Desktop on Windows 10 or Docker Compose on a linux environment. At the time we created this workshop, Docker Desktop did not work on windows 2016 or 2019 servers.
 Make sure docker is installed and running before you start the BPME Server Run-time setup. The software can be found here https://docs.docker.com/docker-for-windows/install/
