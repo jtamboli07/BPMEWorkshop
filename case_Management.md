@@ -1,5 +1,5 @@
 # Understanding Case Management Framework Implementation
-Case Management brings a lot of functionality to a BPM solution implementation. All the implementation capabilities are not that obvious. We created this lab to illustrate this implementation methodology. 
+Case Management brings a lot of functionality to a BPM solution implementation. All the implementation capabilities are not that obvious. We created this lab to illustrate this implementation methodology. I have a video on TIBCO Academy to explain this section below. https://academy.tibco.com/share/asset/view/394
 
 The slide below is a good illustration of such an implementation. 
 
