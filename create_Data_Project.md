@@ -58,7 +58,7 @@ a)***registered*** b)***advise*** c)***investigate*** d)***resolved***
 
 
 14) Mark the attribute "resolved" under Terminal States.
-<img src="/images/businessData/13.png" alt="Create Business Data Project" width=700/>
+<img src="/images/businessData/13.jpg" alt="Create Business Data Project" width=700/>
 
 15) The project will look like:  
 <img src="/images/businessData/14.jpg" alt="Create Business Data Project" width=700/>
