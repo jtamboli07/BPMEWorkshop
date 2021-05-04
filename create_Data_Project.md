@@ -22,9 +22,9 @@ and Click and rename the Case1 as Dispute.
 
 <img src="/images/businessData/4.jpg" alt="Create Business Data Project" width=400/>
 
-5) Rename the added case Identifier to "disputeref"
+5) Rename the added case Identifier to "Dispute Id"
 
-<img src="/images/businessData/5.jpg" alt="Create Business Data Project" width=700/>
+<img src="/images/businessData/5.png" alt="Create Business Data Project" width=700/>
 
 6) Click the "Dispute" Case Data and select "Add Attribute" option and name it as "customer name"
 <img src="/images/businessData/6.jpg" alt="Create Business Data Project" width=400/>
