@@ -10,7 +10,7 @@ Open the Business Studio and select a workspace then
 
 2) Name the Project "MyDisputeCase" and Click "Finish"
 
-<img src="/images/businessData/2.jpg" alt="Create Business Data Project" width=400/>
+<img src="/images/businessData/2.png" alt="Create Business Data Project" width=400/>
 
 3) From right pane Palette > Under Case Data > Case > Click & drag Case Data object
 
