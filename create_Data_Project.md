@@ -27,12 +27,12 @@ and Click and rename the Case1 as Dispute.
 <img src="/images/businessData/5.png" alt="Create Business Data Project" width=700/>
 
 6) Click the "Dispute" Case Data and select "Add Attribute" option and name it as "customer name"
-<img src="/images/businessData/6.jpg" alt="Create Business Data Project" width=400/>
+<img src="/images/businessData/6.png" alt="Create Business Data Project" width=400/>
 
 7) Similarily add 3 more attributes of name and type
    ***dob (Date), disputetype(text), cardtype(text)***
 
-  <img src="/images/businessData/7.jpg" alt="Create Business Data Project" width=400/>
+  <img src="/images/businessData/7.png" alt="Create Business Data Project" width=400/>
 
 8) From the palette > Under elements > select and drag Enumeration to canvas in the middle > rename it to disputetype
 
