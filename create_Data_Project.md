@@ -40,15 +40,15 @@ and Click and rename the Case1 as Dispute.
 
 9) Add below enumeration values :  ***overcharge, wronglycharged***. Click on disputetype and change Type by selecting newly created enumeration group as shown below :
 
-<img src="/images/businessData/9.jpg" alt="Create Business Data Project" width=700/>
+<img src="/images/businessData/9.png" alt="Create Business Data Project" width=700/>
 
 10) Click on dispute and select "Add Identifier"
 
-<img src="/images/businessData/10.jpg" alt="Create Business Data Project" width=400/>
+<img src="/images/businessData/10.png" alt="Create Business Data Project" width=400/>
 
 11) From Palette > Create Enumerations "states" and put 4 values
 a)***registered*** b)***advise*** c)***investigate*** d)***resolved***
-<img src="/images/businessData/11.jpg" alt="Create Business Data Project" width=700/>
+<img src="/images/businessData/11.png" alt="Create Business Data Project" width=700/>
 
 12) link the enumeration object to the earlier created Identifier "states" :
 <img src="/images/businessData/12.jpg" alt="Create Business Data Project" width=700/>
@@ -57,7 +57,7 @@ a)***registered*** b)***advise*** c)***investigate*** d)***resolved***
 <img src="/images/businessData/15.jpg" alt="Create Business Data Project" width=700/>
 
 14) Mark the attribute "resolved" under Terminal States.
-<img src="/images/businessData/13.jpg" alt="Create Business Data Project" width=700/>
+<img src="/images/businessData/13.png" alt="Create Business Data Project" width=700/>
 
 15) The project will look like:  
 <img src="/images/businessData/14.jpg" alt="Create Business Data Project" width=700/>
