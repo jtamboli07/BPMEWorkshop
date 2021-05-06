@@ -65,7 +65,12 @@ a)***registered*** b)***advise*** c)***investigate*** d)***resolved***
 
 
 ### Congratulations you have successfully created a Business Data Project
+In the next section we will build a form to represent the case data we just created. 
 
-In the next section, we will create an Organisation project. Organisation Projects defines the Models based upon which work assignment and allocation will work for your Automation process.
+##Lets start looking at building the form
+## Next Step: [Building the project forms (_forms)](forms_project.md)
 
-## Next Step: [Building the Organisation Model](create_Organisation_Project.md)
+
+//In the next section, we will create an Organisation project. Organisation Projects defines the Models based upon which work assignment and allocation will work for  your Automation process.
+
+//## Next Step: [Building the Organisation Model](create_Organisation_Project.md)
