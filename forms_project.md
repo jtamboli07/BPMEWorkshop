@@ -10,5 +10,26 @@ Create a new BPM Process Project () and call it MyDispute_Forms. This creates a 
 
 ![forms_project](images/forms/.5.png)
 
+Expand the project and add a dispute folder under forms, it should look like this below.
+
+![forms_project](images/forms/1.png)
+
+Right-click the Dispute folder and  select New->Form.
+
+![forms_project](images/forms/2.png)
+
+Enter the name "Dispute" and select Embedable under form type. Click Finish.
+
+![forms_project](images/forms/3.png)
+
+Your form should now look like this.
+
+![forms_project](images/forms/4.png)
+
+Expand your business object model and drag the Dispute Case class onto the form. 
+
+![forms_project](images/forms/5.png)
+
+
 //Lets start building the services business object model (_bom)
 //## Next Step: [Building the services business object model project](services_Bom_Project.md)
