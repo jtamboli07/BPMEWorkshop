@@ -5,5 +5,10 @@ Forms project allow you to create one central place for embed-able forms (forms 
 ## Pageflows
 Pageflows can re reused just like embed-able forms. Again this speeds up development. Putting pageflows into the forms project keeps all your UI related processes and artifacts in a single project and it allows for speeding up development. Pageflows are often used for CRUD functionality that can be called from process tasks, business services as well as case actions. 
 
-Lets start building the services business object model (_bom)
-## Next Step: [Building the services business object model project](services_Bom_Project.md)
+## Building our first form
+Create a new BPM Process Project () and call it MyDispute_Forms. This creates a new BPM process project that we will be using for forms and pageflows. See below.
+
+![forms_project](images/forms/.5.png)
+
+//Lets start building the services business object model (_bom)
+//## Next Step: [Building the services business object model project](services_Bom_Project.md)
