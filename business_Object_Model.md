@@ -27,7 +27,7 @@ Parameters and data fields are similar to parameters and local variables in most
 Using case data as the single source of truth for data, it makes sense to only pass unique case identifiers between processes instead of passing entire case objects between processes. This ensures that data is always in synch when working with data. It also means that when working with data, you need to fetch the data using case search functionality. For this reason it is also a good idea to create reusable service processes to do searching as it will speed up development time. We will be implementing this best practice in this workshop.
 
 OK, so lets start building our first business object model.
-## Next Step: [Building your first bom](create_Data_Project.md)
+## Next Step: [Building your first bom (_bom)](create_Data_Project.md)
 
 
 ```
