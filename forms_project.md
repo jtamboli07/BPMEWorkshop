@@ -42,5 +42,9 @@ The form in preview should look like this.
 
 ![forms_project](images/forms/7.png)
 
+We will use this form in the subsequent forms. This will make it easier as if the form changes in one place, all calling forms will be updated.
+
+
+
 //Lets start building the services business object model (_bom)
 //## Next Step: [Building the services business object model project](services_Bom_Project.md)
