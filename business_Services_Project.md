@@ -28,7 +28,8 @@ Let us create a Business Service from a template. Business Studio provides templ
 
 ![forms_project](images/bServices/6.png)
 
-New complete the New Process Wizard to look like this. Add a Label and Select Create Case Data Business Service Process. This business service will have a form to handle the data capture, a service task to create the case, and also handle any errors that may occur.
+Now complete the New Process Wizard to look like this. Add a Label and Select Create Case Data Business Service Process. This business service will have a form to handle the data capture, a service task to create the case, and also handle any errors that may occur.
+Remember to change the Business service label and rename the Business Category to MyDispute.
 
 ![forms_project](images/bServices/7.png)
 

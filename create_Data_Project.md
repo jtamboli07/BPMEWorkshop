@@ -71,6 +71,6 @@ In the next section we will build a form to represent the case data we just crea
 ## Next Step: [Building the project forms (_forms)](forms_project.md)
 
 
-//In the next section, we will create an Organisation project. Organisation Projects defines the Models based upon which work assignment and allocation will work for  your Automation process.
+<!--//In the next section, we will create an Organisation project. Organisation Projects defines the Models based upon which work assignment and allocation will work for  your Automation process.
 
-//## Next Step: [Building the Organisation Model](create_Organisation_Project.md)
+//## Next Step: [Building the Organisation Model](create_Organisation_Project.md)-->

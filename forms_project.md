@@ -48,5 +48,5 @@ We will use this form in the subsequent forms. This will make it easier as if th
 ## [Building the business services project](business_Services_Project.md)
 
 
-//Lets start building the services business object model (_bom)
-//## Next Step: [Building the services business object model project](services_Bom_Project.md)
+<!--//Lets start building the services business object model (_bom)
+//## Next Step: [Building the services business object model project](services_Bom_Project.md)-->
