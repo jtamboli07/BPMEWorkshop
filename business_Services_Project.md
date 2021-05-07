@@ -1,9 +1,9 @@
 # Business Services (_businessServices)
 
-Business Services are used to initiate new long running processes, start cases and also to do basic CRUD operations, whether on BPM case data or other system of record.
-In this lab we will create a Business Service in a separate project to capture a new dispute.
+Business Services are used to initiate new long-running processes, start cases, and also to do basic CRUD operations, whether on BPM case data or other systems of record.
+In this lab, we will create a Business Service in a separate project to capture a new dispute.
 
-Select File->New->BPM process Project like you did when we created the Forms Project. Enter the name of the project and note the Id that is automatically generated. You will see the defualt name start with com.example. This can be changed in the Studio Preferences if you want. It would make sense to be something like com.<customer name>.<solution name>_businesservices. This is completely optional, but it will be very handy as this is what you will see when the project is deployed to the BPM server.
+Select File->New->BPM process Project like you did when we created the Forms Project. Enter the name of the project and note the Id that is automatically generated. You will see the default name start with com.example. This can be changed in the Studio Preferences if you want. It would make sense to be something like com.<customer name>.<solution name>_businesservices. This is completely optional, but it will be very handy as this is what you will see when the project is deployed to the BPM server.
 
 ![forms_project](images/bServices/1.png)
 
@@ -11,14 +11,31 @@ Your project structure now looks like this.
 
 ![forms_project](images/bServices/2.png)
 
-You will see that a process MyDisputeBusiunessServices is automatically created. We can go ahead and change the name to CaptureDispute.
+You will see that a process MyDisputeBusiunessServices is automatically created. We could change the name to CaptureDispute.
+We can go ahead and delete this process for now, but just in case you want to re-use this process to build a business service from scratch, follow the following steps.
 
 ![forms_project](images/bServices/3.png)
 
-A Business Service is a special type of pageflow. In order to change the process (the yellow process) to a business service, we need to change the type to pageflow process and then mark the pageflow to be exposed as a business service. Right-click the process and select Convert to Pageflow Process.
+A Business Service is a special type of pageflow. To change the process (the yellow process) to a business service, we need to change the type to pageflow process and then mark the pageflow to be exposed as a business service. Right-click the process and select Convert to Pageflow Process.
 
 ![forms_project](images/bServices/4.png)
 
-Now, select the properties of the process send select Publish as a Business Service checkbox. Also change the Business Category to MyDispute.
+Now, select the properties of the process and select Publish as a Business Service checkbox. Also, change the Business Category to MyDispute.
 
 ![forms_project](images/bServices/5.png)
+
+Let us create a Business Service from a template. Business Studio provides templates to make the building of processes much easier and quicker. Right-click on Processes and select Business Services.
+
+![forms_project](images/bServices/6.png)
+
+New complete the New Process Wizard to look like this. Add a Label and Select Create Case Data Business Service Process. This business service will have a form to handle the data capture, a service task to create the case, and also handle any errors that may occur.
+
+![forms_project](images/bServices/7.png)
+
+You will notice the process is created but it has some errors. We need to fix that to make sure the process will run. The errors are because of the data fields that have not been defined correctly. We need to select the BOM types for the case data field and reference fields.  
+
+![forms_project](images/bServices/8.png)
+
+I prefer to have my case data fields be more descriptive. Lets change the name and select the bom case class for the caseBomType Field. Call the field Dispute and select correct case type.
+
+![forms_project](images/bServices/9.png)
