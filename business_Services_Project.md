@@ -73,3 +73,7 @@ You need to now create a mapping to send the parameter data from the form to the
 
 ![forms_project](images/bServices/18.png)
 
+If you preview your form, it should now look like this. We will make some other minor changes a little later. This process should not we ready to deploy.
+
+## Next Step: Deploy and test the BOM, Business Services and Forms projects.
+## [First Deployment](first_Deployment.md)
