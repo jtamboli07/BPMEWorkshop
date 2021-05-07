@@ -56,3 +56,20 @@ We want to customize the default form. Now click on Open, to display the form. Y
 
 ![forms_project](images/bServices/13.png)
 
+We want to use the Embedded form we created earlier. Lets delete the current form and replace it with the embedded form. 
+
+![forms_project](images/bServices/14.png)
+![forms_project](images/bServices/15.png)
+
+In the forms control palette, select the embedded form control and drop the selected control on the empty frame. Select the Dispute form in the Select form to embed dialog.
+
+![forms_project](images/bServices/16.png)
+
+Click Yes on the pop-up dialog. 
+
+![forms_project](images/bServices/17.png)
+
+You need to now create a mapping to send the parameter data from the form to the embedded form. Make sure to map the value of the parameter.
+
+![forms_project](images/bServices/18.png)
+
