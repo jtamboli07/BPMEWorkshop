@@ -46,11 +46,11 @@ Do the same to the caseRefType data field and call it Dispute Ref. The errors on
 
 The reason is that the service task also needs to be configured to update the correct BOM case. Click on the 3 ellipses and select the Dispute class. After this, your error should not disappear and the process should function correctly.
 
-![forms_project](images/bServices/10.png)
+![forms_project](images/bServices/11.png)
 
 Select the Enter Data To Create Case user form in the process. You will see the Use Default Form radio button is selected. Change it to Form. You may see a pop-up, just click on OK to proceed and create a new form. This will override the default form the system creates. 
 
-![forms_project](images/bServices/11.png)
+![forms_project](images/bServices/12.png)
 
 We want to customize the default form. Now click on Open, to display the form. You should see a form looking like this.
 
