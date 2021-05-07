@@ -44,7 +44,7 @@ The form in preview should look like this.
 
 We will use this form in the subsequent forms. This will make it easier as if the form changes in one place, all calling forms will be updated.
 
-
+## Next Steps:  Lets create a process to capture the dispute. We will be using the bom as well as the form we just created in the this process.
 
 //Lets start building the services business object model (_bom)
 //## Next Step: [Building the services business object model project](services_Bom_Project.md)
