@@ -11,3 +11,14 @@ Your project structure now looks like this.
 
 ![forms_project](images/bServices/2.png)
 
+You will see that a process MyDisputeBusiunessServices is automatically created. We can go ahead and change the name to CaptureDispute.
+
+![forms_project](images/bServices/3.png)
+
+A Business Service is a special type of pageflow. In order to change the process (the yellow process) to a business service, we need to change the type to pageflow process and then mark the pageflow to be exposed as a business service. Right-click the process and select Convert to Pageflow Process.
+
+![forms_project](images/bServices/4.png)
+
+Now, select the properties of the process send select Publish as a Business Service checkbox. Also change the Business Category to MyDispute.
+
+![forms_project](images/bServices/5.png)
