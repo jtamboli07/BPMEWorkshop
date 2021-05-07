@@ -32,3 +32,6 @@ Make sure to start with the BOM project Artifact. Select Deploy to the ploy the 
 Do the same with the Forms and Business Services Artifacts and then confirm completion of deployment.
 
 ![forms_project](images/Deployment/8.png)
+
+OK, we have created process, data, forms and deployed them, lets test the process.
+## Next Step: [Test Deployment](test_Deployment.md)
