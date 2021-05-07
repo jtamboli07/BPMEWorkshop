@@ -36,6 +36,8 @@ You will notice the process is created but it has some errors. We need to fix th
 
 ![forms_project](images/bServices/8.png)
 
-I prefer to have my case data fields be more descriptive. Lets change the name and select the bom case class for the caseBomType Field. Call the field Dispute and select correct case type.
+I prefer to have my case data fields be more descriptive. Let's change the name and select the bom case class for the caseBomType Field. Call the field Dispute and select the correct case type.
 
 ![forms_project](images/bServices/9.png)
+
+Do the same to the caseRefType data field and call it Dispute Ref. The errors on the 2 data fields should disappear after you save your project, however, there is still an error on the Create Case Data Service Task. The reason is that the service task also needs to be configured to update the correct BOM case. Click on the 3 ellipses and select the Dispute class. After this, your error should not disappear and the process should function correctly.
