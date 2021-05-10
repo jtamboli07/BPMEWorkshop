@@ -46,4 +46,4 @@ Re-deploy and test your application. Your capture form should now look like this
 
 Next Step: Users will be defined in the Organizational Model to allow work to be offered to the Dispute Advisor Position for completion.
 
-## Next Step: [Create Org Model](create_Organizational_Project.md)
+## Next Step: [Create Org Model](create_Organisation_Project.md)
