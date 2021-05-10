@@ -21,6 +21,12 @@ We will do this on the Process Manager Initiate Script to illustrate creating an
 
 Select the Enter Data to Create Case user task. Make sure the Process Manager Script is expanded. Click the Initiate Script Tab and change the Script Defined as: to JavaScript. Enter the following 2 lines
 
+TIBCO BusinessStudio provides code auto complete. You may be familiar with this if you are used to the Eclipse framework. By clicking ctrl-space you should see the auto complete section open up. In this case you can see the following predefined variables. 
+
+data :      this is for accessing and data that you as the developer created. 
+factory:    this is for accessing the creators/initializers of the data that you created.
+pkg:        this is for accessing the enumeration values for setting enum field values. 
+
 ```
 //Create the object
 data.Dispute = factory.com_example_mydisputecase.createDispute();
@@ -29,7 +35,6 @@ data.Dispute = factory.com_example_mydisputecase.createDispute();
 data.Dispute.caseState1 = pkg.com_example_mydisputecase.states.REGISTERED;
 ```
 
-
-
+You have to use the package variable to set an enumeration. You cannot use plain text.
 
 ![refine_project](images/Refine/2.png)
