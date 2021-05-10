@@ -40,8 +40,9 @@ You have to use the package variable to set an enumeration. You cannot use plain
 
 ![refine_project](images/Refine/2.png)
 
-Re-deploy and test your application. Your capture form should now look like this. You will see the Id Field is gone and the Case State has been renamed and re-defined as a read-only text field.
+Re-deploy and test your application. Your capture form should now look like this. You will see the Dispute Id Field is gone, the Case State has been renamed, Case State has been re-defined as a read-only text field and finally the Resolution field is hidden.
 
 ![refine_project](images/Refine/3.png)
 
-Next Step:
+Next Step: Starting a long running process after the case is created. 
+## Next Step: [Start Process](start_Process.md)
