@@ -21,3 +21,7 @@ Now open the Case Manager (http://localhost/apps/case-manager/#/cases) and Selec
 Notice that the number of fields in the list of cases are limited to Dispute Id and CaseState1. This can be enhanced to show a little more information to the end user. We will get to that a little later. Click on case number one and review the case data. 
 
 ![forms_project](images/Testing/4.png)
+
+Congratulations, you have created, Deployed and tested your first project. 
+
+Next Steps: Fix issues and enhance solution to include a case action.
