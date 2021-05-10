@@ -1,6 +1,4 @@
-## Deploying your first project artifacts
-
-Lets start creating the deployment artifacts. Select the 3 projects we built so far.
+Let's start creating the deployment artifacts. Select the 3 projects we have built so far.
 Right-click and select Deployment->Generate Test Artifacts
 
 ![forms_project](images/Deployment/1.png)
