@@ -2,7 +2,7 @@
 Let's refine our project a little and explore some UI capabilities.
 
 We made the following changes.
-1. In this screen we changed the visibility of the Id field to false, which means it will not be visible when the form is displayed to the user.
+1. In this screen we changed the visibility of the Dispute Id field to false, which means it will not be visible when the form is displayed to the user.
 2. We made the Case State field a text box, we made the text box Read-Only and 
 3. We renames the caseState1 field for Case State, which makes it more user-friendly.
 4. We changed the visibility of the Resolution field to false, as the user that captures the dispute does not need to see this field.
