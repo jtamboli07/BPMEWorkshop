@@ -10,15 +10,15 @@
 
 3) In the loaded page, drag "Organization Unit" from the palette and name it "Dispute Team"
 
-<img src="/images/organization/3.jpg" alt="create organization project" width=700/>
+<img src="/images/organization/3.png" alt="create organization project" width=700/>
 
 4) Add 3 postions
 
-<img src="/images/organization/4.jpg" alt="create organization project" width=400/>
+<img src="/images/organization/4.png" alt="create organization project" width=400/>
 
 and name them as ***a)CustomerService b)DisputeAdvisor c)FraudInvestigator***
 
-<img src="/images/organization/5.jpg" alt="create organization project" width=250/>
+<img src="/images/organization/5.png" alt="create organization project" width=250/>
 
 6) Also name the page as "MyDisputeOrg" and save the project.
 
