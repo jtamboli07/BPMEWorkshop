@@ -6,7 +6,7 @@ We made the following changes.
 2. We made the Case State field a text box, we made the text box Read-Only and 
 3. We renames the caseState1 field for Case State, which makes it more user friendly.
 
-![forms_project](images/Refine/1.png)
+![refine_project](images/Refine/1.png)
 
 Lets also make a process field change. For this we will preset the Case State field to Registered to indicate that the case was created and it is a registered case in the system.
 
@@ -32,4 +32,4 @@ data.Dispute.caseState1 = pkg.com_example_mydisputecase.states.REGISTERED;
 
 
 
-![forms_project](images/Refine/2.png)
+![refine_project](images/Refine/2.png)
