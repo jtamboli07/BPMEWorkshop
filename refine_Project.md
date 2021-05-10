@@ -44,5 +44,6 @@ Re-deploy and test your application. Your capture form should now look like this
 
 ![refine_project](images/Refine/3.png)
 
-Next Step: Starting a long running process after the case is created. 
-## Next Step: [Start Process](start_Process.md)
+Next Step: Users will be defined in the Organizational Model to allow work to be offered to the Dispute Advisor Position for completion.
+
+## Next Step: [Create Org Model](create_Organizational_Project.md)
