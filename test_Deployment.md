@@ -25,3 +25,4 @@ Notice that the number of fields in the list of cases are limited to Dispute Id 
 Congratulations, you have created, Deployed and tested your first project. 
 
 Next Steps: Fix issues and enhance solution to include a case action.
+## Next Step: [Test Deployment](refine_Project.md)
