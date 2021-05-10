@@ -23,7 +23,7 @@ Select the Enter Data to Create Case user task. Make sure the Process Manager Sc
 
 TIBCO BusinessStudio provides code auto complete. You may be familiar with this if you are used to the Eclipse framework. By clicking ctrl-space you should see the auto complete section open up. In this case you can see the following predefined variables. 
 
-data :      this is for accessing and data that you as the developer created. 
+data:      this is for accessing and data that you as the developer created. 
 factory:    this is for accessing the creators/initializers of the data that you created.
 pkg:        this is for accessing the enumeration values for setting enum field values. 
 
