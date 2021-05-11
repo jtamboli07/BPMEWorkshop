@@ -30,8 +30,15 @@ Go ahead and redeploy your bom project and test the case manager again. You shou
 <img src="/images/actions/6.png" alt="create actions" width=700/>
 
 Click on the case and review the case details screen. 
-1. At the top of the screen you will see the timeline of the selected case. The current state is marked by a check mark. This is where you will see the progress of the case as it moves through the milestones/states of the case. These are the enumerations you defined in the data model.
+1. At the top of the screen you will see the timeline of the selected case. The current state is marked by a checkmark. This is where you will see the progress of the case as it moves through the milestones/states of the case. These are the enumerations you defined in the data model.
 2. Below the lifecycle you will see a read-only view of the case details. This is the data you captured during the case started. Data can be changed only through case actions. Those are the Advise and Investigate buttons on my screenshot below. You should have just one at the moment.
 3. The case actions allow the user to interact with the data. The user can modify data by selecting a case action button. The edit screen can be created to allow the user to change data and also case state. If the user changes the current state the milestone at the top will change after the case action is completed.
+4. On the right-hand side of the screen you have 4 sections.
+    - Work Items: If you have a long-running process that contains user activities/tasks that are associated with a case, you will see those work items here. You need to have the case reference field on the work item interface to link the work item to the case. More about this later. 
+    - Linked Cases: If your data model consists of case objects with associations, you will be able to see all related case objects in this section. You need to trigger a Global Case Link service task to accomplish this.
+    - Documents: TIBCO BPM can attach documents to the case. This is where you will see the documents. You will have to trigger a Link Document service task to create a linked document.
+    - Audit: Every action taken on a case data element is audited. This is where you will see these updates which include the date, time, user, and action that was taken.
 
 <img src="/images/actions/7.png" alt="create actions" width=700/>
+
+We will go through these in more detail as the workshop progresses.
