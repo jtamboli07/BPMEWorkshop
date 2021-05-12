@@ -28,3 +28,10 @@ Next you can rename the MyDispute_Process-Process to Registered
 You should have a process that looks like this.
 
 <img src="/images/process/6.png" alt="get case id" width=700/>
+
+First lets create the input parameter that will receive the case ID we are passing in from the business service. We will make this ID parameter input only and required. 
+
+<img src="/images/process/7.png" alt="get case id" width=700/>
+<img src="/images/process/8.png" alt="get case id" width=700/>
+
+The parameter type should be the same as the case id in the BOM.
