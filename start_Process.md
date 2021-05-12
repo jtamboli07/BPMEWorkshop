@@ -40,4 +40,8 @@ The parameter type should be the same as the case id in the BOM.
 
 In the process, click on the triangle in the top right of the process editor. You will see the BPMN palette pop open. Click on the tasks and select the script task icon and drag it to the process on top of the line. You will see that if you position the mouse cursor on top of the line, the script task should be linked into the line automatically. If not, simply click on the line and drag the black square on the arrow side to the left of the newly created script task. This sometimes takes practice.
 
+<img src="/images/process/10.png" alt="get case id" width=700/>
+
 Rename the script task to Init Data. Change the Script Defined as  to JavaScript.
+
+<img src="/images/process/11.png" alt="get case id" width=700/>
