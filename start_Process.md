@@ -7,4 +7,24 @@ Another best practice is not to pass huge chunks of data from one process or act
 
 <img src="/images/process/1.png" alt="get case id" width=700/>
 
-In this screenshot you will see the script that we execute when the create case service task is completed. The first line is responsible for reading the case data from the reference field. When the data is populated in the Dispute data field, you can extract the newly created ID that we are doing in the second line. We will use this field to pass into the new long running business process we will create. 
+In this screenshot you will see the script that we execute when the create case service task is completed. The first line is responsible for reading the case data from the reference field. When the data is populated in the Dispute data field, you can extract the newly created ID that we are doing in the second line. We will use this field to pass into the new long running business process we will create next.
+
+Click menu File-> New -> BPM Process Project. 
+
+<img src="/images/process/2.png" alt="get case id" width=700/>
+
+Enter the name, review the id and click finish to create the project in studio. 
+
+<img src="/images/process/3.png" alt="get case id" width=700/>
+
+Your project should look like this.
+
+<img src="/images/process/4.png" alt="get case id" width=700/>
+
+Next you can rename the MyDispute_Process-Process to Registered
+
+<img src="/images/process/5.png" alt="get case id" width=700/>
+
+You should have a process that looks like this.
+
+<img src="/images/process/6.png" alt="get case id" width=700/>
