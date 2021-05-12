@@ -13,7 +13,7 @@ Let's also make a process field change. For this, we will preset the Case State 
 
 TIBCO BPM Enterprise only uses JavaScript for all scripting. There are 3 places to create scripts in BPM Enterprise. 
 1. Script task in the process: this is used if you want to initialize data or do some data manipulation for subsequent tasks in the process. 
-2. On every task in a process you can create Process level scripts for events like initial, Complete, Timeout, and a cancel script. These are evaluated when the process executes. 
+2. On every task in a process you can create Process level scripts for events like initial, Complete, Timeout, and a canceling script. These are evaluated when the process executes. 
 3. On user tasks you can also create Work Manager Level Scripts. There are evaluated when a user task executes. Scripts for the following events are available. Schedule, Reschedule, Open, Close, and Submit. 
 
 To set the Case State to we can it anywhere but in our case, we want to set it before the user task is displayed to the user. If you want to set the value of a case data field before it was displayed to a user, you will need to initialize the data field. If you want to set a case data field after it's been processed through a user task, you don't need to do that as the user form does the initialization for you. 
@@ -40,7 +40,7 @@ You have to use the package variable to set an enumeration. You cannot use plain
 
 ![refine_project](images/Refine/2.png)
 
-Re-deploy and test your application. Your capture form should now look like this. You will see the Dispute Id Field is gone, the Case State has been renamed, Case State has been re-defined as a read-only text field and finally the Resolution field is hidden.
+Re-deploy and test your application. Your capture form should now look like this. You will see the Dispute Id Field is gone, the Case State has been renamed, Case State has been re-defined as a read-only text field and finally, the Resolution field is hidden.
 
 ![refine_project](images/Refine/3.png)
 
