@@ -64,3 +64,14 @@ data.DisputeRef = bpm.caseData.findByCaseIdentifier(data.DisputeID,'com.example.
 //Read the data from the case reference
 data.Dispute = bpm.caseData.read(data.DisputeRef);
 ```
+
+<img src="/images/process/14.png" alt="get case id" width=700/>
+
+Lets examine this script. 
+1. is the parameter that was passed down to the process instance from the business service.
+2. is the case class which is made from the BOM class name and the Dispute case name
+- in the first line we use a case object bpm.caseData to find the case reference (pointer to the data) for the case id.
+3. when we have the case reference, in 3 we read the data from the database with the bpm command bpm.caseData.read.
+
+Remember, as soon as the data is read into the local case data field, the data becomes stale. The reason for this is that the data can be read by any process in the system, like user request or update, external event, service task etc. The best practice in this case will be to only find and user the data when required, for instance when a user opens a form. We can call the exact same script in a pageflow to execute when a user opens a work item from a work list. The user will then see fresh data. When the user is done, we can update the case in the same pageflow. We will talk about this more later.
+
