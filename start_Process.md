@@ -36,13 +36,13 @@ First lets create the input parameter that will receive the case ID we are passi
 
 The parameter type should be the same as the case id in the BOM.
 
-Also lets create 2 data fields. FYI, not parameters as these field will only be local to this process. One for the Dispute case data field and one for the Dispute case data Reference.  
+Also lets create 2 data fields. FYI, not parameters as these field will only be local to this process. One for the Dispute case data field and one for the Dispute case data reference.  
 
 <img src="/images/process/12.png" alt="get case id" width=700/>
 <img src="/images/process/13.png" alt="get case id" width=700/>
 
 
-In the process, click on the triangle in the top right of the process editor. You will see the BPMN palette pop open. Click on the tasks and select the script task icon and drag it to the process on top of the line. You will see that if you position the mouse cursor on top of the line, the script task should be linked into the line automatically. If not, simply click on the line and drag the black square on the arrow side to the left of the newly created script task. This sometimes takes practice.
+Next, in the process, click on the triangle in the top right of the process editor. You will see the BPMN palette pop open. Click on the tasks and select the script task icon and drag it to the process on top of the line. You will see that if you position the mouse cursor on top of the line, the script task should be linked into the line automatically. If not, simply click on the line and drag the black square on the arrow side to the left of the newly created script task. This sometimes takes practice.
 
 <img src="/images/process/9.png" alt="get case id" width=700/>
 
@@ -52,4 +52,15 @@ Rename the script task to Init Data. Change the Script Defined as  to JavaScript
 
 <img src="/images/process/11.png" alt="get case id" width=700/>
 
+We will now populate the Dispute Reference field and the Dispute case data field. We will ise the reference field to link the case to the user task we will be creating next. 
 
+
+Add the following lines to your "Init Data - JavaScript" 
+
+```
+//Find Dispute Reference for provided Dispute Id
+data.DisputeRef = bpm.caseData.findByCaseIdentifier(data.DisputeID,'com.example.mydisputecase.Dispute');
+
+//Read the data from the case reference
+data.Dispute = bpm.caseData.read(data.DisputeRef);
+```
