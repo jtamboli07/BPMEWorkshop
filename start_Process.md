@@ -83,4 +83,12 @@ Call the user task "Review Dispute". You will notice that there is a red x on th
 
 <img src="/images/process/16.png" alt="get case id" width=700/>
 
-You will also notice that the default form is selected. This means the system will use all the data exposed to the user task to present to the user. We will change this. Lets just get the error on the user task fixed. To fix the error we need to assign a participant to the user task. 
+You will also notice that the default form is selected. This means the system will use all the data exposed to the user task to present to the user. We will change this. Lets just get the error on the user task fixed. To fix the error we need to assign a participant to the user task. Open your Org Project and expose the Dispute Team under MyDisputeOrg. Drag the Dispute Advisor and drop it on top of the Review Dispute User Task. 
+
+<img src="/images/process/18.png" alt="get case id" width=700/>
+
+This action will create a participant in the Process project with the same name as the position in the Org model. 
+
+<img src="/images/process/19.png" alt="get case id" width=700/>
+
+you will notice that the red x error marker disappears. 
