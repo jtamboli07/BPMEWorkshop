@@ -73,17 +73,17 @@ Let's examine this script.
 - in the first line we use a case object bpm.caseData to find the case reference (pointer to the data) for the case id.
 3. when we have the case reference, in 3 we read the data from the database with the bpm command bpm.caseData.read.
 
-Remember, as soon as the data is read into the local case data field, the data becomes stale. The reason for this is that the data can be changed by any process in the system, like user request or update, external event, service task, etc. The best practice, to only load and use the data when required, for instance when a user opens a form. We can call the same script in a pageflow to execute when a user opens a work item from a worklist. The user will then see fresh data. When the user is done, we can simply update the case at the completion of the pageflow. We will talk about this more later.
+Remember, as soon as the data is read into the local case data field, the data becomes stale. The reason for this is that the data can be changed by any process in the system, like user request or update, external event, service task, etc. The best practice, to only load and use the data when required, for instance when a user opens a form. We can call the same script in a pageflow to execute when a user opens a work item from a worklist. The user will then see fresh data. When the user is done, we can simply update the case after the pageflow. We will talk about this more later.
 
-Next, let's add a user task to the process. Drag the user task from the BPMN palette and drop it on the line like we did with the script task.
+Next, let's add a user task to the process. Drag the user task from the BPMN palette and drop it on the line as we did with the script task.
 
 <img src="/images/process/15.png" alt="get case id" width=700/>
 
-Call the user task "Review Dispute". You will notice that there is a red x on the top right of the user task. This means that the task is not configured to run on the BPM engine. With user tasks the probable reason is that the task participant has not been added. 
+Call the user task "Review Dispute". You will notice that there is a red x on the top right of the user task. This means that the task is not configured to run on the BPM engine. With user tasks, the probable reason is that the task participant has not been added. 
 
 <img src="/images/process/16.png" alt="get case id" width=700/>
 
-You will also notice that the default form is selected. This means the system will use all the data exposed to the user task to present to the user. We will change this. Lets just get the error on the user task fixed. To fix the error we need to assign a participant to the user task. Open your Org Project and expose the Dispute Team under MyDisputeOrg. Drag the Dispute Advisor and drop it on top of the Review Dispute User Task. 
+You will also notice that the default form is selected. This means the system will use all the data exposed to the user task to present to the user. We will change this. Let's just get the error on the user task fixed. To fix the error we need to assign a participant to the user task. Open your Org Project and expose the Dispute Team under MyDisputeOrg. Drag the Dispute Advisor and drop it on top of the Review Dispute User Task. 
 
 <img src="/images/process/18.png" alt="get case id" width=700/>
 
@@ -91,4 +91,38 @@ This action will create a participant in the Process project with the same name 
 
 <img src="/images/process/19.png" alt="get case id" width=700/>
 
-you will notice that the red x error marker disappears. 
+You will notice that the red x error marker on the user task disappears. Now then, when you deploy this process and the Org Model project like we did before to the engine. Remember to deploy the org model project first as the process project has the org model as a dependant project.  
+
+<img src="/images/process/20.png" alt="get case id" width=700/>
+
+Before we can test we need to make sure the Business Service triggers the process. Open the business service and drag and drop the sub-process task from the bpmn palette and drop it on the line in the process after the case data is created. 
+
+<img src="/images/process/24.png" alt="get case id" width=700/>
+
+Click the plus on the task and select the "Registered" process as the target sub process to start.
+
+<img src="/images/process/25.png" alt="get case id" width=700/>
+
+Now click the Map To Sub-Process and map the Dispute Is from the local data to the Dispute ID in the sub-process.
+
+<img src="/images/process/26.png" alt="get case id" width=700/>
+
+You will see an error on the sub-process with a message. Click the Configure task for ... link. and the error should go away. 
+
+<img src="/images/process/27.png" alt="get case id" width=700/>
+
+Re-deploy the Business Service. 
+
+
+When starting a case, a user task will be created in the form of a work item for users that are added to the Dispute Adviser group. Before you can test you will also need to add a user to the position. If you have not done so, you will have to create an LDAP container. The documentation will help you do that. Open the Organization Browser and select Manage LDAP Container.
+
+<img src="/images/process/21.png" alt="get case id" width=700/>
+
+We will just use the System Administrator for this exercise. At the top right of the screen select Browse Organization. Now expand the Organizations till you see the 3 positions you created in your Org Model project. Select the Dispute Advisor Position and select the checkbox next the the tibco-admin user.
+
+<img src="/images/process/22.png" alt="get case id" width=700/>
+
+Click Map selected resource. 
+
+<img src="/images/process/23.png" alt="get case id" width=700/>
+
