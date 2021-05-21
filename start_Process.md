@@ -146,3 +146,15 @@ Open the work item to reveal the default form created by the system. You should 
 <img src="/images/process/32.png" alt="get case id" width=700/>
 
 You will see that by default all the process data is exposed to a new user task created in a process. The data in this case exposed is a Dispute Id, Dispute Data Field, and a Dispute Reference field. A form interprets a reference field as a data field just like a normal case data field, and that is why the 2 sets of the same data are displayed.
+
+So far we have 
+1. Create a data model to save our case data. 
+2. We created a business service to capture the data.
+3. Created a case Action to modify the data.
+4. Created an Organizational model to allow users to perform work in the system.
+5. Created a long-running business process to do work based on a certain profile. 
+6. We called the long-running business process from a sub-process step in the business service.
+
+These are all really basic components of any business process. The next action will be to call the same sub-process, not directly, but via a process interface.  This is a really important capability when it comes to dynamic process execution. 
+
+## Next Steps: [Creating a process interface](interface.md)
