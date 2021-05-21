@@ -1,5 +1,5 @@
 # Starting a process when the case is created. 
-A long-running process provides the ability to manage user activities and making sure work is done in a timely fashion by the predefined user/offer set. Long-running processes are persisted in the BPM engine database to keep track of progress as the work gets completed. In triggering a long-running process, you create a process instance that will run until the completion of the activities that make up the process.  As a best practice, long-running processes should be broken up into multiple smaller sub-processes that are responsible for a specific part of the process. When it comes to case management we break the life of the case up into multiple milestones that complete specific activities to solve a problem. We then string these activities together to complete the life of the case end-to-end. Every one of these milestones is represented by a case states that we defined in the business object model. In our scenario, we have Registered, Advise, Investigate, and Resolved as the case states. Each of these states may or may not have multiple activities to be performed to complete the process or move the case state from one to the next. We will create a process for each of these states. 
+A long-running process provides the ability to manage user activities and making sure work is done in a timely fashion by the predefined user/offer set. Long-running processes are persisted in the BPM engine database to keep track of progress as the work gets completed. In triggering a long-running process, you create a process instance that will run until the completion of the activities that make up the process.  As a best practice, long-running processes should be broken up into multiple smaller sub-processes that are responsible for a specific part of the process. When it comes to case management we break the life of the case up into multiple milestones that complete specific activities to solve a problem. We then string these activities together to complete the life of the case end-to-end. Every one of these milestones is represented by a case states that we defined in the business object model. In our scenario, we have Registered, Advice, Investigate, and Resolved as the case states. Each of these states may or may not have multiple activities to be performed to complete the process or move the case state from one to the next. We will create a process for each of these states. 
 
 For the first process, we will create a process that will be responsible for processing the "Registered" state of the process. The case represents the meta-data of the case for example the customer or dispute. The actual data should be located in the organization's systems of record and the BPM process should collect the data that is required to perform to work as the user needs the data. In our case, we assume the BPM case is the real data. When we created the business service we created the case but did not trigger a long-running process to handle the actual dispute. 
 
@@ -91,15 +91,15 @@ This action will create a participant in the Process project with the same name 
 
 <img src="/images/process/19.png" alt="get case id" width=700/>
 
-You will notice that the red x error marker on the user task disappears. Now then, when you deploy this process and the Org Model project like we did before to the engine. Remember to deploy the org model project first as the process project has the org model as a dependant project.  
+You will notice that the red x error marker on the user task disappears. Now then, when you deploy this process and the Org Model project as we did before to the engine. Remember to deploy the org model project first as the process project has the org model as a dependant project.  
 
 <img src="/images/process/20.png" alt="get case id" width=700/>
 
-Before we can test we need to make sure the Business Service triggers the process. Open the business service and drag and drop the sub-process task from the bpmn palette and drop it on the line in the process after the case data is created. 
+Before we can test we need to make sure the Business Service triggers the process. Open the business service and drag and drop the sub-process task from the BPMN palette and drop it on the line in the process after the case data is created. 
 
 <img src="/images/process/24.png" alt="get case id" width=700/>
 
-Click the plus on the task and select the "Registered" process as the target sub process to start.
+Click the plus on the task and select the "Registered" process as the target sub-process to start.
 
 <img src="/images/process/25.png" alt="get case id" width=700/>
 
@@ -119,7 +119,7 @@ When starting a case, a user task will be created in the form of a work item for
 
 <img src="/images/process/21.png" alt="get case id" width=700/>
 
-We will just use the System Administrator for this exercise. At the top right of the screen select Browse Organization. Now expand the Organizations till you see the 3 positions you created in your Org Model project. Select the Dispute Advisor Position and select the checkbox next the the tibco-admin user.
+We will just use the System Administrator for this exercise. At the top right of the screen select Browse Organization. Now expand the Organizations till you see the 3 positions you created in your Org Model project. Select the Dispute Advisor Position and select the checkbox next to the the "tibco-admin" user.
 
 <img src="/images/process/22.png" alt="get case id" width=700/>
 
@@ -131,7 +131,7 @@ Back in the Work Manager, Capture a new Dispute business service.
 
 <img src="/images/process/28.png" alt="get case id" width=700/>
 
-Complete the forma nd click submit to create the case and start a process instance.
+Complete the form and click submit to create the case and start a process instance.
 Click the Work View button at the top of the screen to display the list of work items created. You can click the item on the list to see a preview of the work item or click the open button to open and process the work item.
 
 <img src="/images/process/30.png" alt="get case id" width=700/>
@@ -141,8 +141,8 @@ Open the work item to reveal the default form created by the system. You should 
 
 <img src="/images/process/31.png" alt="get case id" width=700/>
 
-2 copies of the same data is displayed. You may wonder why that is. Lets look at the work item we created in BusinessStudio.
+2 copies of the same data are displayed. You may wonder why that is. Let's look at the work item we created in BusinessStudio.
 
 <img src="/images/process/32.png" alt="get case id" width=700/>
 
-You will see that by default all the process data is exposed to a new user task created in a process. The data in this case exposed is a Dispute Id, Dispute Data Field and a Dispute Reference field. A form interprets a reference field as a data field just like a normal case data field, and that is why the 2 sets of the same data is displayed.
+You will see that by default all the process data is exposed to a new user task created in a process. The data in this case exposed is a Dispute Id, Dispute Data Field, and a Dispute Reference field. A form interprets a reference field as a data field just like a normal case data field, and that is why the 2 sets of the same data are displayed.
