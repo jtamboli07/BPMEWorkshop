@@ -111,6 +111,7 @@ You will see an error on the sub-process with a message. Click the Configure tas
 
 <img src="/images/process/27.png" alt="get case id" width=700/>
 
+
 Re-deploy the Business Service. 
 
 
@@ -126,3 +127,22 @@ Click Map selected resource.
 
 <img src="/images/process/23.png" alt="get case id" width=700/>
 
+Back in the Work Manager, Capture a new Dispute business service. 
+
+<img src="/images/process/28.png" alt="get case id" width=700/>
+
+Complete the forma nd click submit to create the case and start a process instance.
+Click the Work View button at the top of the screen to display the list of work items created. You can click the item on the list to see a preview of the work item or click the open button to open and process the work item.
+
+<img src="/images/process/30.png" alt="get case id" width=700/>
+<img src="/images/process/29.png" alt="get case id" width=700/>
+
+Open the work item to reveal the default form created by the system. You should see a screen like this below.
+
+<img src="/images/process/31.png" alt="get case id" width=700/>
+
+2 copies of the same data is displayed. You may wonder why that is. Lets look at the work item we created in BusinessStudio.
+
+<img src="/images/process/32.png" alt="get case id" width=700/>
+
+You will see that by default all the process data is exposed to a new user task created in a process. The data in this case exposed is a Dispute Id, Dispute Data Field and a Dispute Reference field. A form interprets a reference field as a data field just like a normal case data field, and that is why the 2 sets of the same data is displayed.
