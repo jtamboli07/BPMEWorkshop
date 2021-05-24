@@ -16,7 +16,7 @@ Now add a new process interface
 <img src="/images/Interface/4.png" alt="get case id" width=700/>
 <img src="/images/Interface/5.png" alt="get case id" width=700/>
 
-You should see a screen like this.n We will be adding a new parameter for Dispute Id. You could add many more fields, but what we will do is to pass the Id for the case from where we can find all the other data we may want to use. That way the interface template is nice and clean and it will be easier to change what every sub process needs as the real data is in the case. 
+You should see a screen like this. We will be adding a new parameter for Dispute Id. You could add many more fields, but what we will do is to pass the Id for the case from where we can find all the other data we may want to use. That way the interface template is nice and clean and it will be easier to change what every sub process needs as the real data is in the case. 
 
 <img src="/images/Interface/6.png" alt="get case id" width=700/>
 
@@ -53,17 +53,18 @@ Your process is ready to be called.
 Calling a process with an interface requires the name/location where the sub-process can be found. e.g. /MyDispute_BusinessService/Process Packages/MyDisputeBusinessServices.xpdl. This is done in a Runtime Identifier data field. This data field will tell the engine where the sub-process is that needs to be started. This could be any number of sub-processes as long as they are associated with the same interface template that we just created. 
 
 You will now see your Business Service has an error marker on the sub process for starting the process. 
+This is because the sub-process is been changed and the normal parameter is not available any more. You will have to re-select the sub-process interface instead of the actual process.
 
 <img src="/images/Interface/17.png" alt="get case id" width=700/>
 
-This is because the sub-process is been changed and the normal parameter is not available any more. You will have to re-select the sub-process interface instead of the actual process.
-
+Now create a new Text field called Runtime Id
 
 <img src="/images/Interface/15.png" alt="get case id" width=700/>
-<img src="/images/Interface/18.png" alt="get case id" width=700/>
 
 Make sure the field is 150 characters long. Process locations is a long path to the actual process location like "/MyDispute_BusinessService/Process Packages/MyDisputeBusinessServices.xpdl"
 
 Now select the newly created Runtime Id in the sub-process properties page.
- You will also have to map the Dispute Id in the Map To Sub-Process Tab.
+You will also have to map the Dispute Id in the Map To Sub-Process Tab.
+
+<img src="/images/Interface/18.png" alt="get case id" width=700/>
 
