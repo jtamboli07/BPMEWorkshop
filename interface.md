@@ -66,5 +66,6 @@ Make sure the field is 150 characters long. Process locations is a long path to 
 Now select the newly created Runtime Id in the sub-process properties page.
 You will also have to map the Dispute Id in the Map To Sub-Process Tab.
 
-<img src="/images/Interface/18.png" alt="get case id" width=700/>
+<img src="/images/Interface/19.png" alt="get case id" width=700/>
+<img src="/images/Interface/20.png" alt="get case id" width=700/>
 
