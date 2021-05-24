@@ -42,10 +42,27 @@ Your process will now look like this.
 
 <img src="/images/Interface/12.png" alt="get case id" width=700/>
 
-You will now delete the yellow starter and join the grey starter with the Init data script task.
+You will now delete the yellow starter and join the grey starter with the Init data script task. 
 
 <img src="/images/Interface/13.png" alt="get case id" width=700/>
 
+Your process is ready to be called.
+
 ## 3. Calling process to have a RunTime Id field: 
-The name/location where the sub-process can be found. e.g. /MyDispute_BusinessService/Process Packages/MyDisputeBusinessServices.xpdl
+
+Calling a process with an interface requires the name/location where the sub-process can be found. e.g. /MyDispute_BusinessService/Process Packages/MyDisputeBusinessServices.xpdl. This is done in a Runtime Identifier data field. This data field will tell the engine where the sub-process is that needs to be started. This could be any number of sub-processes as long as they are associated with the same interface template that we just created. 
+
+You will now see your Business Service has an error marker on the sub process for starting the process. 
+
+<img src="/images/Interface/17.png" alt="get case id" width=700/>
+
+This is because the sub-process is been changed and the normal parameter is not available any more. You will have to re-select the sub-process interface instead of the actual process. You will also have to map the Dispute Id in the Map To Sub-Process Tab.
+
+
+<img src="/images/Interface/15.png" alt="get case id" width=700/>
+<img src="/images/Interface/18.png" alt="get case id" width=700/>
+
+Make sure the field is 150 characters long. Process locations is a long path to the actual process location like "/MyDispute_BusinessService/Process Packages/MyDisputeBusinessServices.xpdl"
+
+Now select the newly created Runtime Id in the sub-process properties page.
 
