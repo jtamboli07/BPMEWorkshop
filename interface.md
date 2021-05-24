@@ -56,7 +56,7 @@ You will now see your Business Service has an error marker on the sub process fo
 
 <img src="/images/Interface/17.png" alt="get case id" width=700/>
 
-This is because the sub-process is been changed and the normal parameter is not available any more. You will have to re-select the sub-process interface instead of the actual process. You will also have to map the Dispute Id in the Map To Sub-Process Tab.
+This is because the sub-process is been changed and the normal parameter is not available any more. You will have to re-select the sub-process interface instead of the actual process.
 
 
 <img src="/images/Interface/15.png" alt="get case id" width=700/>
@@ -65,4 +65,5 @@ This is because the sub-process is been changed and the normal parameter is not 
 Make sure the field is 150 characters long. Process locations is a long path to the actual process location like "/MyDispute_BusinessService/Process Packages/MyDisputeBusinessServices.xpdl"
 
 Now select the newly created Runtime Id in the sub-process properties page.
+ You will also have to map the Dispute Id in the Map To Sub-Process Tab.
 
