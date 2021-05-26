@@ -77,7 +77,26 @@ You will also have to map the Dispute Id in the Map To Sub-Process Tab.
 
 <img src="/images/Interface/22.png" alt="get case id" width=700/>
 
+The last item we need to do is to specify the location of the sub process to be called. 
+Select the MyDispute_process.xpdl file and see the resource properties below. The path is the value that you will need. Tiy can right-click and copy the line in the studio properties section. 
+
+<img src="/images/Interface/23.png" alt="get case id" width=700/>
+
+Next we need to create an Init Script for the Sub-process to set the runtime id. See below
+
+```
+data.RuntimeId = "/MyDispute_Process/Process Packages/MyDispute_Process.xpdl";
+```
+
+<img src="/images/Interface/24.png" alt="get case id" width=700/>
+
+
 Your process should be ready to be deployed and tested. Take a stab at it and make sure it works as it is supposed to.
+You have to deploy the BusinessService, Interface and the Process projects. And remember to deploy thge interface first. The other two projects has the interface project as a dependency.
 
 It should do exactly what it did before and deliver a work item to the Review Dispute task to the Dispute Advisor.
- 
+
+The benefit of this is 
+1. The called process is not hard coded into the calling process sub-process step. 
+2. The sub-process being called can be determined at runtime, which gives you, the developer, a lot of flexibility. The entire Case Management Process implementation is built on this dynamic nature of the process execution.
+
