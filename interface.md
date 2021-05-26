@@ -64,8 +64,20 @@ Now create a new Text field called Runtime Id
 Make sure the field is 150 characters long. Process locations is a long path to the actual process location like "/MyDispute_BusinessService/Process Packages/MyDisputeBusinessServices.xpdl"
 
 Now select the newly created Runtime Id in the sub-process properties page.
-You will also have to map the Dispute Id in the Map To Sub-Process Tab.
+
 
 <img src="/images/Interface/19.png" alt="get case id" width=700/>
 <img src="/images/Interface/20.png" alt="get case id" width=700/>
 
+Your Properties page should look like this.
+
+<img src="/images/Interface/21.png" alt="get case id" width=700/>
+
+You will also have to map the Dispute Id in the Map To Sub-Process Tab.
+
+<img src="/images/Interface/22.png" alt="get case id" width=700/>
+
+Your process should be ready to be deployed and tested. Take a stab at it and make sure it works as it is supposed to.
+
+It should do exactly what it did before and deliver a work item to the Review Dispute task to the Dispute Advisor.
+ 
