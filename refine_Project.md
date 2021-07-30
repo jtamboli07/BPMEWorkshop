@@ -19,24 +19,24 @@ Complete,
 Timeout,
 Canceling . 
 These scripts provide the ability to evaluate data, set data, and even more complex activities.
-3. Work Manager Level Scripts: On "User Tasks" it is possible to create Work Manager Level Scripts. Task scripts are evaluated when users open the task from the inbox.  The following event scripts are available. 
+3. Work Manager Level Scripts: On "User Tasks," it is possible to create Work Manager Level Scripts. Task scripts get evaluated when users open the task from the inbox.  The following event scripts are available. 
 Schedule, 
 Reschedule, 
 Open, 
 Close, and
 Submit. 
 
-In the tutorial process, we want to set the case state before the first task. If you want to set the value of a case data field before it is displayed, you will need to initialize the data field. If you want to set a case data field after it has been processed through a user task, you don't need to do that as the user form does the initialization for you. 
+In the tutorial process, we want to set the case state before the first task. If you're going to set the value of a case data field before it is displayed, you will need to initialize the data field. If you want to set a case data field after processing a user task, you don't need to do that as the user form does the initialization for you. 
 
 We will do this on the Process Manager Initiate Script to illustrate creating an object.
 
 Select the Enter Data to Create Case user task. Make sure the "Process Manager" script is displayed. Click the Initiate Script Tab and change the Script Defined as: to JavaScript. Enter the following two lines
 
-TIBCO BusinessStudio provides code auto-complete. You may be familiar with this if you are used to the Eclipse framework. By clicking "ctrl-space" you should see the autocomplete section open up. In this case, you can see the following predefined variables. 
+TIBCO BusinessStudio provides code auto-complete. You may be familiar with this if you are used to the Eclipse framework. By clicking "ctrl-space," you should see the autocomplete section open up. In this case, you can see the following predefined variables. 
 
-data: this is for accessing and data that you as the developer created. 
-factory: this is for accessing the creators/initializers of the data that you created. 
-pkg: this is for accessing the enumeration values for setting enum field values. 
+Data: this is for accessing and data that you as the developer created. 
+Factory: this is for accessing the creators/initializers of the data that you created. 
+Pkg: this is for accessing the enumeration values for setting enum field values. 
 
 ```
 //Create the object
