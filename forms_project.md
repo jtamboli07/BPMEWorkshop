@@ -1,12 +1,12 @@
 # Forms Project (_forms)
 ## Embed-able forms
-Forms project allows you to create one central place for embed-able forms (reusable forms). It makes it very easy to create user interfaces that are consistent throughout your project. It is a recommended best practice to create an embed-able form for every case or global class in your project and reuse it where needed. This way, you can format a form once and then reuse it. Formatting forms takes time and, having to repeat them can lead to longer than expected implementation times.
+Forms project allows you to create one central place for embed-able forms (reusable forms). It makes it very easy to create user interfaces that are consistent throughout your project. It is a recommended best practice to create an embed-able form for every case or global class in your project and reuse it where needed. This way, you can format a task form once and then reuse it. Formatting forms takes time and, having to repeat them can lead to longer than expected implementation times.
 
 ## Pageflows
-Pageflows can be reused just like embed-able forms. Again this speeds up development. Putting page flows into the forms project keeps all your UI-related processes and artifacts in a single project and, it allows for speeding up development. Pageflows are short-lived processes that can be used to implement CRUD operations. Pageflows that can be linked to process tasks, business services, or case actions. 
+Pageflows can be reused just like embed-able forms. Again this speeds up development. Putting page flows into the forms project keeps all your UI-related processes and artifacts in a single project and, it allows for speeding up development. Pageflows are short-lived processes that can implement CRUD operations. Pageflows that can be linked to process tasks, business services, or case actions. 
 
 ## Building our first form
-Create a new BPM Process Project and call it MyDispute_Forms. This creates a new BPM process project that we will be using for forms and page flows. See below.
+Please create a new BPM Process Project and call it "MyDispute_Forms." Doing this makes a new BPM process project that we will be using for forms and page flows. See below.
 
 ![forms_project](images/forms/.5.png)
 

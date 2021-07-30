@@ -6,7 +6,7 @@ create cases,
 do basic CRUD operations on BPM case data or other systems of record data.
 In this lab, we will create a Business Service in a separate project to capture a new dispute.
 
-Select File->New->BPM process Project like you did when we created the Forms Project. Enter the name of the project and note the "Id" is auto-generated. You will see the default project id start with "com.example". The default project id can be modified in the Studio Preferences. It would make sense to be something like com.<customer name>.<solution name>_businesservices. Changing the project id is optional but a best practice. The id is what you see when the project is deployed to the BPM server.
+Select File->New->BPM process Project like you did when we created the Forms Project. Enter the name of the project and note the "Id" is auto-generated. You will see the default project id start with "com.example". It is possible to modify the default project id in the Studio Preferences. It would make sense to be something like com.<customer name>.<solution name>_businesservices. Changing the project id is optional but a best practice. The id identifies the project when deployed to the BPM server.
 
 ![forms_project](images/bServices/1.png)
 
@@ -19,7 +19,7 @@ We can go ahead and delete this process for now, but just in case you want to re
 
 ![forms_project](images/bServices/3.png)
 
-A Business Service is a special type of pageflow. To change the process (the yellow process) to a business service, we need to change the type to "pageflow process" then indicate the pageflow to be exposed as a business service. Right-click the process and select Convert to Pageflow Process.
+A Business Service is a particular type of pageflow. To change the process (the yellow process) to a business service, we need to change the type to "pageflow process" then indicate the pageflow to expose as a business service. Right-click the process and select Convert to Pageflow Process.
 
 ![forms_project](images/bServices/4.png)
 
@@ -31,7 +31,7 @@ Let us create a Business Service from a template. Business Studio provides templ
 
 ![forms_project](images/bServices/6.png)
 
-Now complete the New Process Wizard to look like this. Add a label and select "Create Case Data Business Service Process". We will configure the Business Service to have a form to handle the data capture, a service task to create the case, and also handle any errors that may occur.
+Now complete the New Process Wizard to look like this. Add a label and select "Create Case Data Business Service Process." We will configure the Business Service to have a form to handle the data capture, a service task to create the case, and also handle any errors that may occur.
 Remember to change the Business service label and rename the Business Category to MyDispute.
 
 ![forms_project](images/bServices/7.png)

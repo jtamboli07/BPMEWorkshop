@@ -1,5 +1,5 @@
 # Build an Organization Project
-Organizational Models are normally created for specific solutions in organizations. This is a best practice not to share Org Models as having project share could impact systems if an org model needs to change for a different project. Let's create a new Org Model.
+Organizational Models are generally created for specific process solutions in organizations. A best practice is not to share Org Models. Sharing projects could impact systems if an org model needs to change for a different project. Let's create a new Org Model.
 
 1) Select File > New > Organization Project
 
@@ -9,11 +9,11 @@ Organizational Models are normally created for specific solutions in organizatio
 
 <img src="/images/organization/2.jpg" alt="create organization project" width=700/>
 
-3) In the loaded page, drag "Organization Unit" from the palette and name it "Dispute Team"
+3) In the loaded page, drag "Organization Unit" from the palette and name it "Dispute Team."
 
 <img src="/images/organization/3.png" alt="create organization project" width=700/>
 
-4) Add 3 postions
+4) Add three positions
 
 <img src="/images/organization/4.png" alt="create organization project" width=400/>
 
@@ -21,16 +21,16 @@ and name them as ***a)CustomerService b)DisputeAdvisor c)FraudInvestigator***
 
 <img src="/images/organization/5.png" alt="create organization project" width=250/>
 
-6) Also name the page as "MyDisputeOrg" and save the project.
+6) Also, name the page as "MyDisputeOrg" and save the project.
 
 <img src="/images/organization/6.jpg" alt="create organization project" width=400/>
 
 ### Congratulations Your Org Model is completed
 
-When the case is created there are 2 ways you can interact with it. 
-1. Case Action: Through a case action you can interact with the case on an ad-hoc basis. That means a user can view the data and updater the data but is not forced by an SLA to do so. Activities like an address change is a good example of this kind of interaction.
-2. Process Instance: Process instances are used when you want to make sure works gets done in a timely fashion. It is possible to put a deadline/SLA on a user tasks which means that the process can notify someone of it is not completed in a predefined time. The process also monitors the activities and can report on them.
+After case creation, there are two ways you can interact with it. 
+1. Case Action: Through a case action, you can interact with the case on an ad-hoc basis. In other words, a user can view or update the data. No SLA forces the user to complete an action. Activities like an address change are an excellent example of this kind of interaction.
+2. Process Instance: Process instances ensure works gets done in a timely fashion. SLA's/Deadline Events monitor the time allotted to complete activities. It is possible to put a deadline/SLA on a user's tasks which means that the process can notify someone if not completed in a predefined time. The process also monitors the activities and can report on them.
 
-Lets start by creating a Case Action.
+Let's start by creating a Case Action.
 
 ## Next Step: [Building the Actions project](create_Actions_Project.md)

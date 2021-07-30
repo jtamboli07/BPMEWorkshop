@@ -16,7 +16,7 @@ Click close and open the Bom project file structure to expose the Newly generate
 ![forms_project](images/Deployment/4.png)
 
 RASC file is the file that we will deploy to the BPM server. You can drag and drop this file on the new deployment screen or select it from the New Deployment Screen.
-The order in which we deploy the artifacts is important. Review the dependencies before deployment to make sure the order you need to follow. Make sure you deploy your project from the bottom up.
+The order in which we deploy the artifacts is essential. Review the dependencies before deployment to make sure the order you need to follow. Make sure you deploy your project from the bottom up.
 
 ![forms_project](images/Deployment/6.png)
 ![forms_project](images/Deployment/7.png)
