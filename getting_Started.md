@@ -1,7 +1,7 @@
 # Prerequisites for Workshop
 
 ## Windows
-For BPM Enterprise, you need to use docker-compose. To run docker-compose on a windows machine, you need docker desktop. For this reason, a windows server does not work as the Docker desktop does not run on a Windows server yet. When this becomes available, you should be able to do all of this on a Windows server. If you want to do this in the cloud, you will need to use Azure as AWS does not offer Windows 10. We have Azure images to share if you are interested.
+For BPM Enterprise, you need to use docker-compose. To run docker-compose on a windows machine, you need a docker desktop. For this reason, a windows server does not work as the Docker desktop does not run on a Windows server yet. When this becomes available, you should be able to do all of this on a Windows server. If you want to do this in the cloud, you will need to use Azure as AWS does not offer Windows 10. We have Azure images to share if you are interested.
 
 ## Linux
 For Linux, All you need is to install docker-compos. Docker-compose on Linux is generally not a problem. I found that CentOS performs better when using a cloud AWS instance. The GUI on CentOS is more responsive than RedHat or other Linux instances. 
@@ -9,7 +9,7 @@ For Linux, All you need is to install docker-compos. Docker-compose on Linux is 
 
 ## Docker
 To run the BPM Runtime Developer Server, you will need Docker-Compose installed on your environment. When we created this workshop, Docker Desktop did not run on windows 2016 or 2019 servers.
-Make sure docker is installed and running before you start the BPME Server Run-time setup. The BPM Enterprise binaries can be downloaded from the following location. https://docs.docker.com/docker-for-windows/install/
+Make sure docker is installed and running before you start the BPME Server Run-time setup. You can download the BPM Enterprise binaries from the following location. https://docs.docker.com/docker-for-windows/install/
 
 ## BPM Enterprise
 Instructions to Download the software or spin up an AMI
@@ -33,7 +33,7 @@ C:\tibco\bpme\bpm\5.0\samples\bpm-compose. The docker-compose.yml file manages t
 
 Microsoft Visual Studio Code is a great editor for creating all sorts of coding artifacts. What is nice about VS Code is that it allows you to install multiple different types of plugins for editing code, managing Docker containers, etc.
 
-**Note: when doing a docker-compose down, all the deployed artifacts, will be deleted from your BPM Enterprise node. To preserve the project artifacts, do a docker-compose stop command to stop your node and a docker-compose start to bring the node up again.**
+**Note: when doing a docker-compose down, it will delete all the deployed artifacts from your BPM Enterprise node. To preserve the project artifacts, do a docker-compose stop command to stop your node and a docker-compose start to bring the node up again.**
 
 ### Design-time installation
 The design-time component consists of an Eclipse install with all the required functionality for designing BPM Enterprise components. You should always install the BPM Enterprise server and Design-time in separate folders. We recommended installing the design-time in c:\tibco\studio-50. 
@@ -41,7 +41,7 @@ The design-time component consists of an Eclipse install with all the required f
 Complete the setup and move to the next section.
 
 # Understanding Case Management Methodology
-The Next Step is to understand how the Case Management Methodology is implemented in the BPM solution.
+The Next Step is to understand the implementation of the Case Management Methodology in the TIBCO BPM solution.
 ### Next Step : [Understanding Case Management Methodology](case_Management.md)
 
 # Understanding the used case
