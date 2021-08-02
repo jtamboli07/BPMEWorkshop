@@ -1,25 +1,25 @@
 # Services Projects (_services)
 
-The services project is responsible for updating the state location lookup, case state tables (see screenshot below) as well as the service processes that will be used to search for the current and future case statuses.
+The services project is responsible for updating the state location lookup, case state tables (see screenshot below), and the service processes that will search for the current and future case statuses.
 
  ![build_project](images/buildproject/6.png)
  
  State lookup tables
 
  ## Process to maintain the state location table. 
- This process is exactly the same for updating the state rules table. It is a CRUD process that is exposed as a business service.  
+ This process is the same for updating the state rules table. It is a CRUD process that exposes as a business service.  
 
  ![build_project](images/buildproject/14.png)
  Update Sate Location Process
 
- Lets review the process step by step then you will go ahead and create the same process for the dispute process.
+ Let's review the process step by step; then, you will create the same process for the dispute process.
 
  ### Init Data
- The Init Data script task is responsible for 2 operations.
+ The Init Data script task is responsible for two operations.
  1. Retrieving the current state locations from the lookup table 
- 2. initializing the option lists that will be displayed in the subsequent user form
+ 2. initialize the option lists that display in the subsequent user form
 
-Script outline below should be self explanatory
+Script outline below should be self-explanatory.
 
     //Clear current array fields
     data.CaseList.length = 0;
@@ -44,47 +44,45 @@ Script outline below should be self explanatory
     data.StateList.push("PATIENTCOLLECTIONS");
 
 ### Update State Locations user task
-First we need to create and add some data fields to the interface of the user task.
+First, we need to create and add some data fields to the interface of the user task.
 
  ![build_project](images/buildproject/16.png)
- 
- Data fields to be created
 
-Now create a new user task and then add the following fields to the user task called "Update State Locations"
+Now create a new user task and add the following fields to the user task called "Update State Locations."
 
 ![build_project](images/buildproject/15.png)
 
-When you are done, right click the user task, click Form -> Open
+When you are complete, right-click the user task, click Form -> Open.
 
 We will create a form that looks like this.
 
 ![build_project](images/buildproject/17.png)
 
-Expand your Data section, bottom left corner in outline. 
+Expand your Data section; bottom left corner in Outline. 
 
 ![build_project](images/buildproject/18.png)
 
-Drag and drop the Case List parameter on your form. You can now change the properties of the pane as you like it. Mine looks like the image above.
+Drag and drop the Case List parameter on your Form. You can now change the properties of the pane as you like it. Mine looks like the image above.
 
-Now expand you Palette on the right and select the Modal dialog and put it between the "Update State Location" anf the toolbar. You can click on the tool and release and then point your mouse pointer at the location where you want to drop the control and click. This is not a normal drag and drop action. This sometimes takes a little while to get used to.
+Next, expand your Palette on the right and select the Modal dialog. Put it between the "Update State Location" and the toolbar. You can click on the tool and release and then point your mouse pointer at the location where you want to drop the control and click. This is not a standard drag-and-drop action and sometimes takes a little while to get used to.
 
 ![build_project](images/buildproject/19.png). 
 
-Next you can drag and drop the Case parameter from the Data section in your Outline to the modal pane. This may require a couple of drag operations before you succeed.
+Next, you can drag and drop the Case parameter from the Data section in your Outline to the modal pane. You may require a couple of drag operations before you succeed.
 
-Next you need to add a couple of buttons to your toolbar. The close button should already be there. Add a "Add", "Update and "Delete" button to resemble my form.
+Next, you need to add a couple of buttons to your toolbar. The close button should already be there. Add an "Add," "Update, and "Delete" button to resemble my Form.
 
-Next you need to create a rule that fires every time a user click on it. My rules looks like this.
+Next, you need to create a rule that fires every time a user clicks on it. My rules look like this.
 
 #### Add
 
-    //Populate the Action parameter with the value "add". The process will use this in a conditional line to execute the add case data
+    //Populate the Action parameter with the value "add." The process will use this in a conditional line to execute the add case data
     data.Action = "add";
 
     //Create a newCase temporary variable that will be stored in the Case data fields
     var newCase = factory.com_services_bom.createStateLocations(); 
 
-    //Store the value "ACTIVE" state of the newCase parameter. This value needs to be in all caps. ENUM field values are always store in caps. 
+    //Store the value "ACTIVE" state of the new case parameter. This value needs to be in all caps. ENUM field values are stored in caps. 
     newCase.state = "ACTIVE";
 
     //Rename the modal dialog pane heading
@@ -111,21 +109,21 @@ The delete action does not open the modal dialog. It simply sets the action valu
     //this line submits the form
     context.form.invokeAction("submit",context.form,context);
 
-#### OK button on the Modal form
-In order to complete the action, you need to add an OK button rule for the modal form on the close event. This can be done with an action or a script. See screenshots below.
+#### OK button on the Modal Form
+To complete the action, you need to add an OK button rule for the modal Form on the close event. This is done with an action or a script. See screenshots below.
 
 ![build_project](images/buildproject/20.png). 
 ![build_project](images/buildproject/21.png). 
 
-When done your form outline should look more or less like this.
+When done, your form outline should look more or less like this.
 
 ![build_project](images/buildproject/22.png). 
 
-Now lets update add the Global case data actions.
+Now let's update add the Global case data actions.
 
 ![build_project](images/buildproject/14.png)
 
-Now add the 3 case data operation service tasks like in the screenshot above.
+Add the three case data operation service tasks like in the screenshot above.
 
 #### Create Case
 
@@ -139,7 +137,7 @@ Now add the 3 case data operation service tasks like in the screenshot above.
 
  ![build_project](images/buildproject/25.png)
 
- Also add conditional sequence flows to these steps. 
+ Also, add conditional sequence flows to these steps. 
 
     data.Action == "add";
     
@@ -151,15 +149,15 @@ Now add the 3 case data operation service tasks like in the screenshot above.
 
     data.Action == "delete";
 
-Lastly, we need to add a couple of script tasks for the service tasks we just created. Also make sure all the sequence flows are drawn like the image below.
+Lastly, we need to add a couple of script tasks for the service tasks we just created. Also, make sure all the sequence flows are drawn like the image below.
 
-On the Update Case Data and Delete Case Data Initiate scrips add the following line
+On the Update Case Data and Delete Case Data Initiate scrips add the following line.
 
     //Searches the case based on the id that was selected on the form.
     data.CaseRef = bpm.caseData.findByCaseIdentifier(data.Case.id,'com.services_bom.StateLocations');
 
 ![build_project](images/buildproject/14.png)
 
-This is a good CRUD pattern process i often use for maintaining data in simple lookup tables. You will come to realise that you use lookup tables a lot on BPM solutions.
+This is a good CRUD pattern process I often use for maintaining data in simple lookup tables. You will come to realize that you use lookup tables a lot on BPM solutions.
 
 Now create a similar process for maintaining the state rules case data table.
